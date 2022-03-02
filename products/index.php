@@ -350,23 +350,26 @@
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="../about/index.html">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link active" href="../products/index.html">Products</a>
-                  </li>
-                  <li class="nav-item ">
-                     <a class="nav-link" href="../contact/index.html">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="https://acogoogle.business.site/">Updates/More</a>
-                  </li>
-               </ul>
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                            <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about/index.php">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../products/index.php">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact/index.php">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://acogoogle.business.site/">Updates/More</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../login/login.php">Login</a>
+                        </li>
+                    </ul>
             </div>
          </nav>
       </section>
