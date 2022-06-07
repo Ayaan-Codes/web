@@ -26,7 +26,7 @@ let card_content = [
     ],
 
     [
-        "<img src='https://img.freepik.com/free-vector/premium-collection-badge-design-vector_53876-43821.jpg?size=338&ext=jpg' alt='Denim Jeans' style='width:100%'>",
+        "<img src='https://aco.company/images/acodevelopmentbanner.png' alt='Denim Jeans' style='width:100%'>",
         "<h1>ACO Development</h1>",
         "<p class='price'>Development</p>",
         "<p>Providing development solutions to retail customers and enterprise customers to launch and maintain any asset digital or otherwise.</p>",
