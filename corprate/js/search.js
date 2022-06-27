@@ -14,7 +14,7 @@ const products = [
 
 let card_slot_content = [
    [
-      "<img src='https://aco.company/images/acohealthcaresolutionslogo.png' alt='Image' style='width:100%'>",
+      "<img src='https://aco.company/images/acohealthcaresolutions.png' alt='Image' style='width:100%'>",
       "<h1>ACO Healthcare Solutions</h1>",
       "<p class='price'>Medical</p>",
       "<p>Providing medical solutions and services to medical professionals worldwide. We invest heavily into research and development to bring the best in class ground breaking tools. Our products range from data centers to tumor detection software.</p>",
