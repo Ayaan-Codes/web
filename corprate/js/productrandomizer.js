@@ -42,7 +42,7 @@ let card_content = [
     ], 
 
     [
-        "<img src='https://aco.company/images/acodevelopmentbanner.png' alt='Denim Jeans' style='width:100%'>",
+        "<img src='https://aco.company/images/corprate/acoproductblockimagesize.png' alt='Denim Jeans' style='width:100%'>",
         "<h1>ACO Public Initiatives</h1>",
         "<p class='price'>Non-Profit</p>",
         "<p>ACO Public Initiatives aims to improve the world by implementing many programs including ACO Green and other such programs. </p>",
