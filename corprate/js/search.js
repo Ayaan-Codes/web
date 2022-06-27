@@ -22,7 +22,7 @@ let card_slot_content = [
   ],
 
   [
-      "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJWOO3EVsc8acnLzYq_GAGAdvhhmlkk0UVYA&usqp=CAU' alt='Denim Jeans' style='width:100%'>",
+      "<img src='https://aco.company/images/acowebsitesandapps.png' alt='Denim Jeans' style='width:100%'>",
       "<h1>ACO Websites & Apps</h1>",
       "<p class='price'>Online</p>",
       "<p>Providing consumer websites and apps ranging from connectivity tools to games. ACO Websites & Apps develop hundrends of products a year for our customers to enjoy at their computer.</p>",
