@@ -32,12 +32,20 @@ let card_content = [
         "<p>Providing development solutions to retail customers and enterprise customers to launch and maintain any asset digital or otherwise.</p>",
         "<button onclick='window.location.href=``;'>Unavailable</button>",
     ],
-    
+
     [
         "<img src='https://aco.company/images/acodevelopmentbanner.png' alt='Denim Jeans' style='width:100%'>",
         "<h1>ACO Prime</h1>",
         "<p class='price'>Service</p>",
         "<p>Premium service with a wide selection to cater to all needs from one person to large families. The Prime Subscription Service is one unified place that applies to every ACO service, app, and other items. This makes it so a person does not need to buy a subscription for everything they use but instead can get everything they want in one place. </p>",
+        "<button onclick='window.location.href=``;'>Unavailable</button>",
+    ], 
+
+    [
+        "<img src='https://aco.company/images/acodevelopmentbanner.png' alt='Denim Jeans' style='width:100%'>",
+        "<h1>ACO Public Initiatives</h1>",
+        "<p class='price'>Non-Profit</p>",
+        "<p>ACO Public Initiatives aims to improve the world by implementing many programs including ACO Green and other such programs. </p>",
         "<button onclick='window.location.href=``;'>Unavailable</button>",
     ], 
 
