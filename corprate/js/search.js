@@ -46,7 +46,7 @@ let card_slot_content = [
   ],
 
   [
-    "<img src='https://aco.company/images/acodevelopmentbanner.png' alt='Denim Jeans' style='width:100%'>",
+    "<img src='https://aco.company/images/acoprime.png' alt='Denim Jeans' style='width:100%'>",
     "<h1>ACO Prime</h1>",
     "<p class='price'>Service</p>",
     "<p>Premium service with a wide selection to cater to all needs from one person to large families. The Prime Subscription Service is one unified place that applies to every ACO service, app, and other items. This makes it so a person does not need to buy a subscription for everything they use but instead can get everything they want in one place. </p>",
