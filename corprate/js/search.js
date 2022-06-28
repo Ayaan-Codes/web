@@ -18,7 +18,7 @@ let card_slot_content = [
         "<h1>ACO Healthcare Solutions</h1>",
         "<p class='price'>Medical</p>",
         "<p>ACO Healthcare Solutions are one of the most essential divisions at ACO. We place high importance on making sure everything is working and in order as it influences many worldwide. The products range from data entry portals, tumor detection software, and digital asset hosting. It's an essential blood vessel for all of us.</p>",
-        "<button onclick='window.location.href=``;'>Unavailable</button>",
+        "<button onclick='window.location.href=`https://aco.company/healthcaresolutions`;'>Discover</button>",
     ],
 
     [
@@ -34,7 +34,7 @@ let card_slot_content = [
         "<h1>ACO Enterprise</h1>",
         "<p class='price'>Enterprise</p>",
         "<p>ACO Enterprise provides market-leading enterprise services for companies small and large. We handle things from branding all the way to internal systems and operations to make sure all your business needs are met. We also provide analytical tools to be able to give everyone a real live feed of what is going on and how to better adapt.</p>",
-        "<button onclick='window.location.href=``;'>Unavailable</button>",
+        "<button onclick='window.location.href=`https://aco.company/enterprise`;'>Discover</button>",
     ],
 
     [
@@ -42,7 +42,7 @@ let card_slot_content = [
         "<h1>ACO Development</h1>",
         "<p class='price'>Development</p>",
         "<p>ACO Development provides advanced development and other business-related services from data entry to management or corporate IT assets. All projects completed by us have lifetime service and superior quality and efficiency compared to all similar services. ACO Development also provides developer tools and services to individuals</p>",
-        "<button onclick='window.location.href=``;'>Unavailable</button>",
+        "<button onclick='window.location.href=`https://aco.company/development`;'>Discover</button>",
     ],
 
     [
@@ -50,7 +50,7 @@ let card_slot_content = [
         "<h1>ACO Prime</h1>",
         "<p class='price'>Service</p>",
         "<p>Premium service with a wide selection to cater to all needs from one person to large families. The Prime Subscription Service is one unified place that applies to every ACO service, app, and other items. This makes it so a person does not need to buy a subscription for everything they use but instead can get everything they want in one place. </p>",
-        "<button onclick='window.location.href=``;'>Out Of Stock</button>",
+        "<button onclick='window.location.href=`https://aco.company/prime`;'>Visit</button>",
     ], 
 
     [
@@ -60,9 +60,6 @@ let card_slot_content = [
         "<p>ACO Public Initiatives is a non-profit division aimed at helping spread our values to the world. This includes safety, security, privacy, health, happiness, knowledge, and global citizenship. The impact of our initiatives is huge and it is reflected in everything from policies and accessible design choices. </p>",
         "<button onclick='window.location.href=``;'>Unavailable</button>",
     ], 
-
-
-
                ];
 
 function gnomeSort(arr, n)
