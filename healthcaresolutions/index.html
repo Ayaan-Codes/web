@@ -1,55 +1,317 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>ACO | Coming Soon...</title>
-    <link href="https://comingsoon.acodevelopment.repl.co/style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="https://comingsoon.acodevelopment.repl.co/script.js"></script>
-<!--Hey! This is the original version
-of Simple CSS Waves-->
+<!--
+╭━━━┳━━━┳━━━╮
+┃╭━╮┃╭━╮┃╭━╮┃
+┃┃╱┃┃┃╱╰┫┃╱┃┃
+┃╰━╯┃┃╱╭┫┃╱┃┃
+┃╭━╮┃╰━╯┃╰━╯┃
+╰╯╱╰┻━━━┻━━━╯
+-->
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
+   <head>
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
 
-<div class="header">
+   <!--🔼Visual Head\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+      <title>ACO Healthcare Solutions</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="https://i.imgur.com/OQxPnyN.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/OQxPnyN.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/OQxPnyN.png">
+   <!--🔼Visual Head\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+   <!--🎨Style CSS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+      <link rel="manifest" href="site.webmanifest">
+      <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <!---c u s t o m--->
+      <link rel="stylesheet" href="https://ayaan-codes.github.io/packages/style/one.css">
+      <link rel="stylesheet" href="https://ayaan-codes.github.io/packages/style/two.css">
+      <link rel="stylesheet" href="https://ayaan-codes.github.io/packages/style/three.css">
+      <link rel="stylesheet" href="https://ayaan-codes.github.io/packages/style/extra.css">
+      <style>
+         section header {
+         font-family:'Comfortaa';
+         font-size: 62px;
+         }
+         
+      /* width */
+      ::-webkit-scrollbar {
+      width: 10px;
+      }
 
-<!--Content before waves-->
-<div class="inner-header flex">
-<!--Just the logo.. Don't mind this-->
-<svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
-<path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
-<g><path fill="#fff"
-d="data:image/png;base64,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" />
-</g>
-</svg>
-<h1>ACO | Coming Soon...</h1>
-</div>
+      /* Track */
+      ::-webkit-scrollbar-track {
+      background: #202021; 
+      }
+ 
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+      background: #dbd7d7; 
+      }
 
-<!--Waves Container-->
-<div>
-<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-<defs>
-<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-</defs>
-<g class="parallax">
-<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-</g>
-</svg>
-</div>
-<!--Waves end-->
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+      background: grey; 
+      }
+	   </style>
+<!--❤💙💜-->
+<style>
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
 
-</div>
-<!--Header ends-->
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #28137d;}
+.alert.warning {background-color: #ff9800;}
 
-<!--Content starts-->
-<div class="content flex">
-<p>ACO.company | A-CO.xyz</p>
-</div>
-<!--Content ends-->
-  </body>
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+   <!--🎨Style CSS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+   <!--✨META META META META META META META EMBEDS META META META META META META META META META META META META META META-->
+      <meta name=description content="Official Website">
+      <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+      <meta itemprop=name content=ACO>
+      <meta itemprop=description content="Official Website">
+      <meta itemprop=image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
+      <meta name=twitter:card content=summary_large_image>
+      <meta name=twitter:title content=ACO Website>
+      <meta name=twitter:description content="Official Website">
+      <meta name=twitter:image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
+      <meta property=og:title content=ACO Website>
+      <meta property=og:url content=https://ayaan-codes.github.io/web>
+      <meta property=og:site_name content=ACO>
+      <meta property=og:type content=website>
+      <meta property=og:description content="Official Website">
+      <meta property=og:image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
+   <!--✨META META META META META META META EMBEDS META META META META META META META META META META META META META META-->
+   <!--📄Script JS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+      <noscript><meta http-equiv="refresh" content="0;url=https://ayaan-codes.github.io/doit/enable-js.html"></noscript>
+      <script src="https://ayaan-codes.github.io/packages/script/scriptone.js"></script>
+      <script src="https://ayaan-codes.github.io/packages/script/scripttwo.js"></script>
+      <script src="https://ayaan-codes.github.io/packages/script/scriptthree.js"></script>
+      <script src="https://ayaan-codes.github.io/packages/script/security.js"></script>
+      <script>
+      function disableCtrlKeyCombination(e)
+      {
+      //list all CTRL + key combinations you want to disable
+      var forbiddenKeys = new Array('a', 'b', 'c', 'd', 'e', 'f' , 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',);
+      var key;
+      var isCtrl;
+      if(window.event)
+      {
+      key = window.event.keyCode;     //IE
+      if(window.event.ctrlKey)
+      isCtrl = true;
+      else
+      isCtrl = false;
+      }
+      else
+      {
+      key = e.which;     //firefox
+      if(e.ctrlKey)
+      isCtrl = true;
+      else
+      isCtrl = false;
+      }
+      //if ctrl is pressed check if other key is in forbidenKeys array
+      if(isCtrl)
+      {
+      for(i=0; i<forbiddenKeys.length; i++)
+      {
+      //case-insensitive comparation
+      if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+      {
+      alert('🔴 ACO WebModeration™ : ctrl + '+String.fromCharCode(key) +' has been disabled for security reasons.');
+      return false;
+      }
+      }
+      }
+      return true;
+      }
+      var $root = $('html, body');
+
+      $('a[href^="#"]').click(function() {
+      var href = $.attr(this, 'href');
+
+      $root.animate({
+      scrollTop: $(href).offset().top
+      }, 500, function () {
+      window.location.hash = href;
+      });
+
+      return false;
+      });
+      </script>
+      <script language=JavaScript>
+         //Disable right mouse click Script
+         
+         var message="🔴 ACO WebModeration™ : Right click has been disabled for security reasons.";
+         
+         function clickIE4(){
+         if (event.button==2){
+         alert(message);
+         return false;
+          }
+         }
+         
+         function clickNS4(e){
+         if (document.layers||document.getElementById&&!document.all){
+         if (e.which==2||e.which==3){
+         alert(message);
+         return false;
+         }
+         }
+         }
+         
+         if (document.layers){
+         document.captureEvents(Event.MOUSEDOWN);
+         document.onmousedown=clickNS4;
+         }
+         else if (document.all&&!document.getElementById){
+         document.onmousedown=clickIE4;
+         }
+         
+         document.oncontextmenu=new Function("alert(message);return false")
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+   <!--📄Script JS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
+</head>
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
+<body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
+   
+   
+   
+      <section id="navbar">
+         <nav class="navbar navbar-expand-lg navbar-dark navbar-blue">
+            <a class="navbar-brand" href="https://aco.company"><img src="images/ahsnavlogo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="https://aco.company/healthcaresolutions/index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="https://aco.company/healthcaresolutions/about/index.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="https://aco.company/healthcaresolutions/products/index.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="https://aco.company/healthcaresolutions/contact/index.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="https://aco.company/healthcaresolutions/general/index.html">Updates/More</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </section>
+<!--💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙-->
+
+<!--💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙-->
+      <section>
+         <header class="home">
+            ACO Healthcare Solutions
+         </header>
+         <div class="textrotate">
+            <script>
+               var TxtRotate = function(el, toRotate, period) {
+               this.toRotate = toRotate;
+               this.el = el;
+               this.loopNum = 0;
+               this.period = parseInt(period, 10) || 2000;
+               this.txt = '';
+               this.tick();
+               this.isDeleting = false;
+               };
+               
+               TxtRotate.prototype.tick = function() {
+               var i = this.loopNum % this.toRotate.length;
+               var fullTxt = this.toRotate[i];
+               
+               if (this.isDeleting) {
+               this.txt = fullTxt.substring(0, this.txt.length - 1);
+               } else {
+               this.txt = fullTxt.substring(0, this.txt.length + 1);
+               }
+               
+               this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+               
+               var that = this;
+               var delta = 300 - Math.random() * 100;
+               
+               if (this.isDeleting) { delta /= 2; }
+               
+               if (!this.isDeleting && this.txt === fullTxt) {
+               delta = this.period;
+               this.isDeleting = true;
+               } else if (this.isDeleting && this.txt === '') {
+               this.isDeleting = false;
+               this.loopNum++;
+               delta = 500;
+               }
+               
+               setTimeout(function() {
+               that.tick();
+               }, delta);
+               };
+               
+               window.onload = function() {
+               var elements = document.getElementsByClassName('txt-rotate');
+               for (var i=0; i<elements.length; i++) {
+               var toRotate = elements[i].getAttribute('data-rotate');
+               var period = elements[i].getAttribute('data-period');
+               if (toRotate) {
+               new TxtRotate(elements[i], JSON.parse(toRotate), period);
+               }
+               }
+               // INJECT CSS
+               var css = document.createElement("style");
+               css.type = "text/css";
+               css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+               document.body.appendChild(css);
+               };
+            </script>
+            <h1>AHS
+               <span
+                  class="txt-rotate"
+                  data-period="1500"
+                  data-rotate='[ "makes changes", "causes inovation", "impacts many" ]'></span>
+            </h1>
+         </div>
+      </section>
+      
+            
+   
+   </body>
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
 </html>
+
+
+
+
+
