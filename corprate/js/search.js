@@ -62,7 +62,7 @@ let card_slot_content = [
     ], 
 
     [
-        "<img src='https://aco.company/images/' alt='Denim Jeans' style='width:100%'>",
+        "<img src='https://aco.company/images/acogaming-esports.png' alt='Denim Jeans' style='width:100%'>",
         "<h1>ACO GAMING</h1>",
         "<p class='price'>E-Sports</p>",
         "<p>ACO GAMING is the E-Sports team for ACO that plays in professional legues. ACO GAMING has teams on all major games and has won many championships around the world.</p>",
