@@ -60,6 +60,14 @@ let card_slot_content = [
         "<p>ACO Public Initiatives is a non-profit division aimed at helping spread our values to the world. This includes safety, security, privacy, health, happiness, knowledge, and global citizenship. The impact of our initiatives is huge and it is reflected in everything from policies and accessible design choices. </p>",
         "<button onclick='window.location.href=``;'>Unavailable</button>",
     ], 
+
+    [
+        "<img src='https://aco.company/images/' alt='Denim Jeans' style='width:100%'>",
+        "<h1>ACO GAMING</h1>",
+        "<p class='price'>E-Sports</p>",
+        "<p>ACO GAMING is the E-Sports team for ACO that plays in professional legues. ACO GAMING has teams on all major games and has won many championships around the world.</p>",
+        "<button onclick='window.location.href=`https://aco-gaming.acodevelopment.repl.co/`;'>Visit</button>",
+    ], 
                ];
 
 function gnomeSort(arr, n)
