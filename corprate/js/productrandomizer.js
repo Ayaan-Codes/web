@@ -65,6 +65,14 @@ let card_content = [
         "<button onclick='window.location.href=``;'>COMING SOON</button>",
     ], 
 
+    [
+        "<img src='https://aco.company/images/acolabsbanner.png' alt='Denim Jeans' style='width:100%'>",
+        "<h1>ACO Labs</h1>",
+        "<p class='price'>Research & Development</p>",
+        "<p>ACO Labs provides research and development services to solve problems and setup up the solution at any scale. To make these solutions ACO makes use to new technology and expert knowladge to ensure everything is up to spec and well thought out as possible</p>",
+        "<button onclick='window.location.href=``;'>COMING SOON</button>",
+    ], 
+
   
   
 ];
