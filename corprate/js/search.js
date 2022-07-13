@@ -86,10 +86,18 @@ let card_slot_content = [
     ], 
 
     [
-        "<img src='https://aco.company/images/acotechxbanner.png' alt='Denim Jeans' style='width:100%'>",
+        "<img src='https://aco.company/images/acotechx.png' alt='Denim Jeans' style='width:100%'>",
         "<h1>TechX</h1>",
         "<p class='price'>Stalite Operation</p>",
         "<p>TechX by ACO is a satalite operation meaning it operates as it's own brand with minor influence from the main ACO brand. TechX makes special items and is just an innovative place where anything is possible and will be made at some point.</p>",
+        "<button onclick='window.location.href=``;'>COMING SOON</button>",
+    ], 
+
+    [
+        "<img src='https://aco.company/images/acotechbanner.png' alt='Denim Jeans' style='width:100%'>",
+        "<h1>ACO Tech</h1>",
+        "<p class='price'>Technology</p>",
+        "<p>ACO Tech is focused on the physical devices and gadgets market developing high tech and budget solutions in all sectors. From small dongles to custom PCs coming soon ACO Tech is working on it all.</p>",
         "<button onclick='window.location.href=``;'>COMING SOON</button>",
     ], 
 
