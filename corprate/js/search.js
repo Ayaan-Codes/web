@@ -68,6 +68,14 @@ let card_slot_content = [
         "<p>ACO GAMING is the E-Sports team for ACO that plays in professional legues. ACO GAMING has teams on all major games and has won many championships around the world.</p>",
         "<button onclick='window.location.href=`https://aco-gaming.acodevelopment.repl.co/`;'>Visit</button>",
     ], 
+
+    [
+        "<img src='https://aco.company/images/acoutilitiesbanner.png' alt='Denim Jeans' style='width:100%'>",
+        "<h1>ACO Utilities</h1>",
+        "<p class='price'>Utilities</p>",
+        "<p>ACO Utilities is a work in progress system being designed as a way to get water, electricity, food, and internet inside of one single unit to as many locations on our planet as possible. Prototypes are expected to be designed in the coming months.</p>",
+        "<button onclick='window.location.href=``;'>COMING SOON</button>",
+    ], 
                ];
 
 function gnomeSort(arr, n)
