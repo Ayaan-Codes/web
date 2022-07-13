@@ -84,6 +84,15 @@ let card_slot_content = [
         "<p>ACO Labs provides research and development services to solve problems and setup up the solution at any scale. To make these solutions ACO makes use to new technology and expert knowladge to ensure everything is up to spec and well thought out as possible</p>",
         "<button onclick='window.location.href=``;'>COMING SOON</button>",
     ], 
+
+    [
+        "<img src='https://aco.company/images/acotechxbanner.png' alt='Denim Jeans' style='width:100%'>",
+        "<h1>TechX</h1>",
+        "<p class='price'>Stalite Operation</p>",
+        "<p>TechX by ACO is a satalite operation meaning it operates as it's own brand with minor influence from the main ACO brand. TechX makes special items and is just an innovative place where anything is possible and will be made at some point.</p>",
+        "<button onclick='window.location.href=``;'>COMING SOON</button>",
+    ], 
+
                ];
 
 function gnomeSort(arr, n)
