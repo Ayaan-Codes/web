@@ -89,6 +89,14 @@ let card_content = [
         "<button onclick='window.location.href=``;'>COMING SOON</button>",
     ], 
 
+    [
+        "<img src='https://aco.company/images/acoaccountsbanner.png' alt='Denim Jeans' style='width:100%'>",
+        "<h1>ACO Accounts</h1>",
+        "<p class='price'>Accounts</p>",
+        "<p>ACO Accounts is a system where users can create and manage their profile on ACO. This account can be used with all ACO products and services no matter the brand or location. ACO accounts is highly secure and very customizable so you can have it the way you want.</p>",
+        "<button onclick='window.location.href=`https://aco.company/account`;'>Visit</button>",
+    ], 
+
   
   
 ];
