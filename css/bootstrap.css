@@ -11439,3 +11439,14 @@
  div.middle {
     text-align: left;
   }
+
+
+
+ iframe {
+  
+      margin: none;
+      padding: none;
+      border: none;
+      line-height: 0;
+      float: left; 
+  }
