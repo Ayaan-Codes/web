@@ -1,0 +1,1 @@
+ACO Page parts are used to have an iframe as a part instead of make a whole section on each page. This means one edit can change all pages.
