@@ -97,6 +97,14 @@ let card_content = [
         "<button onclick='window.location.href=`https://aco.company/account`;'>Visit</button>",
     ], 
 
+    [
+        "<img src='https://aco.company/images/acomediabanner.png' alt='Denim Jeans' style='width:100%'>",
+        "<h1>ACO Media (LAZO SHOW)</h1>",
+        "<p class='price'>Entertainment</p>",
+        "<p>ACO Media also known as Lazo Show is the entertainment brand for ACO providing video and movie content in multiple languages and catogories. ACO Media and Lazo Show also run music stations and other live events online and in-person.</p>",
+        "<button onclick='window.location.href=`#`;'>COMING SOON</button>",
+    ],
+
   
   
 ];
