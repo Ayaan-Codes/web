@@ -126,7 +126,7 @@ let card_slot_content = [
     ],
 
                ];
-C
+
 function gnomeSort(arr, n)
 {
     let index = 0;
