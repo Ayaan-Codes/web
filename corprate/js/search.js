@@ -122,11 +122,11 @@ let card_slot_content = [
         "<h1>ACO Digital Coin</h1>",
         "<p class='price'>Crypto Currency</p>",
         "<p>ACO Digital Coin, not to be mistaken with ACO Credits available for purchase in accounts or ACO Dollars is a cryto currency. ACO Digital Coin provides great value and is one of the most secure ways to send your money in bulk easily. You can convert between ACO Digital Coin, ACO Credit, and ACO Dollars easily in the ACO Money & Assets portal.</p>",
-        "<button onclick='window.location.href=`#`;'>COMING SOON</button>",
+        "<button onclick='window.location.href=`#`;'>SOON</button>",
     ],
 
                ];
-
+C
 function gnomeSort(arr, n)
 {
     let index = 0;
