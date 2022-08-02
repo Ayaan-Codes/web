@@ -62,7 +62,7 @@ let card_content = [
         "<h1>ACO Utilities</h1>",
         "<p class='price'>Utilities</p>",
         "<p>ACO Utilities is a work in progress system being designed as a way to get water, electricity, food, and internet inside of one single unit to as many locations on our planet as possible. Prototypes are expected to be designed in the coming months.</p>",
-        "<button onclick='window.location.href=`https://aco.company/utilities`;'>Discover</button>",
+        "<button onclick='window.location.href=``;'>COMING SOON</button>",
     ], 
 
     [
@@ -78,7 +78,7 @@ let card_content = [
         "<h1>TechX</h1>",
         "<p class='price'>Stalite Operation</p>",
         "<p>TechX by ACO is a satalite operation meaning it operates as it's own brand with minor influence from the main ACO brand. TechX makes special items and is just an innovative place where anything is possible and will be made at some point.</p>",
-        "<button onclick='window.location.href=`https://aco.company/satalite`;'>Discover</button>",
+        "<button onclick='window.location.href=``;'>COMING SOON</button>",
     ], 
 
     [
@@ -86,7 +86,7 @@ let card_content = [
         "<h1>ACO Tech</h1>",
         "<p class='price'>Technology</p>",
         "<p>ACO Tech is focused on the physical devices and gadgets market developing high tech and budget solutions in all sectors. From small dongles to custom PCs coming soon ACO Tech is working on it all.</p>",
-        "<button onclick='window.location.href=`https://aco.company/tech`;'>Browse</button>",
+        "<button onclick='window.location.href=``;'>COMING SOON</button>",
     ], 
 
     [
@@ -102,7 +102,7 @@ let card_content = [
         "<h1>ACO Media (LAZO SHOW)</h1>",
         "<p class='price'>Entertainment</p>",
         "<p>ACO Media also known as Lazo Show is the entertainment brand for ACO providing video and movie content in multiple languages and catogories. ACO Media and Lazo Show also run music stations and other live events online and in-person.</p>",
-        "<button onclick='window.location.href=`https://aco.company/media`;'>Visit</button>",
+        "<button onclick='window.location.href=``;'>COMING SOON</button>",
     ],
 
     [
