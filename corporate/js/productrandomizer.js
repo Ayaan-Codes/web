@@ -46,7 +46,7 @@ let card_content = [
         "<h1>ACO Public Initiatives</h1>",
         "<p class='price'>Non-Profit</p>",
         "<p>ACO Public Initiatives is a non-profit division aimed at helping spread our values to the world. This includes safety, security, privacy, health, happiness, knowledge, and global citizenship. The impact of our initiatives is huge and it is reflected in everything from policies and accessible design choices. </p>",
-        "<button onclick='window.location.href=``;'>Unavailable</button>",
+        "<button onclick='window.location.href=`https://aco.company/projects`;'>View</button>",
     ], 
 
     [
@@ -70,7 +70,7 @@ let card_content = [
         "<h1>ACO Labs</h1>",
         "<p class='price'>Research & Development</p>",
         "<p>ACO Labs provides research and development services to solve problems and setup up the solution at any scale. To make these solutions ACO makes use to new technology and expert knowladge to ensure everything is up to spec and well thought out as possible</p>",
-        "<button onclick='window.location.href=``;'>COMING SOON</button>",
+        "<button onclick='window.location.href=`https://aco.company/labs`;'>View</button>",
     ], 
 
     [
@@ -110,7 +110,7 @@ let card_content = [
         "<h1>ACO Digital Coin</h1>",
         "<p class='price'>Crypto Currency</p>",
         "<p>ACO Digital Coin, not to be mistaken with ACO Credits available for purchase in accounts or ACO Dollars is a cryto currency. ACO Digital Coin provides great value and is one of the most secure ways to send your money in bulk easily. You can convert between ACO Digital Coin, ACO Credit, and ACO Dollars easily in the ACO Money & Assets portal.</p>",
-        "<button onclick='window.location.href=`#`;'>SOON</button>",
+        "<button onclick='window.location.href=`https://aco.company/digitalcoin`;'>Browse</button>",
     ],
 
   
