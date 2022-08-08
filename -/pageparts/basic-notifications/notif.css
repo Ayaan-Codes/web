@@ -12,6 +12,7 @@
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	color: #fff;
 	font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 	padding: 15px 20px;
 	line-height: 20px;
 	margin-bottom: 15px;
@@ -45,6 +46,7 @@
 	line-height: 20px;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .notification-info {
