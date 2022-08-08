@@ -50,12 +50,12 @@ setTimeout(() => {
 	const warning = addNotification(NOTIFICATION_TYPES.WARNING, 'Be careful!');
 	setTimeout(() => {
 		removeNotification(warning);
-	}, 5000);
+	}, 25);
 }, 2200);
 
 setTimeout(() => {
 	const danger = addNotification(NOTIFICATION_TYPES.DANGER, 'Noooooooo!');
 	setTimeout(() => {
 		removeNotification(danger);
-	}, 5000);
+	}, 25);
 }, 3700);
