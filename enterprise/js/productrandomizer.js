@@ -14,7 +14,7 @@ let card_content = [
         "<h1>Fresh Business</h1>",
         "<p class='price'>Online</p>",
         "<p>ACO Websites & Apps are one of the most diverse divisions to operate. The websites and apps range from tools used by workplaces and schools like drives and document editors to entertainment with a wide selection of video content, music streaming, and games. These online spaces offer everything for everyone and it is the choice of many worldwide.</p>",
-        "<button onclick='window.location.href=`mailto:enterprise@aco.company`;'>Request</button>",
+        "<button onclick='window.location.href=`https://aco.company/enterprise/products/subscriptions`;'>Learn More</button>",
     ],
 
     [
@@ -22,7 +22,7 @@ let card_content = [
         "<h1>Small Business</h1>",
         "<p class='price'>Enterprise</p>",
         "<p>ACO Enterprise provides market-leading enterprise services for companies small and large. We handle things from branding all the way to internal systems and operations to make sure all your business needs are met. We also provide analytical tools to be able to give everyone a real live feed of what is going on and how to better adapt.</p>",
-        "<button onclick='window.location.href=`mailto:enterprise@aco.company`;'>Request</button>",
+        "<button onclick='window.location.href=`https://aco.company/enterprise/products/subscriptions`;'>Learn More</button>",
     ],
 
     [
@@ -30,7 +30,7 @@ let card_content = [
         "<h1>Small - Medium Business</h1>",
         "<p class='price'>Development</p>",
         "<p>ACO Development provides advanced development and other business-related services from data entry to management or corporate IT assets. All projects completed by us have lifetime service and superior quality and efficiency compared to all similar services. ACO Development also provides developer tools and services to individuals</p>",
-        "<button onclick='window.location.href=`mailto:enterprise@aco.company`;'>Request</button>",
+        "<button onclick='window.location.href=`https://aco.company/enterprise/products/subscriptions`;'>Learn More</button>",
     ],
 
     [
@@ -38,7 +38,7 @@ let card_content = [
         "<h1>Medium Business</h1>",
         "<p class='price'>Service</p>",
         "<p>Premium service with a wide selection to cater to all needs from one person to large families. The Prime Subscription Service is one unified place that applies to every ACO service, app, and other items. This makes it so a person does not need to buy a subscription for everything they use but instead can get everything they want in one place. </p>",
-        "<button onclick='window.location.href=`mailto:enterprise@aco.company`;'>Request</button>",
+        "<button onclick='window.location.href=`https://aco.company/enterprise/products/subscriptions`;'>Learn More</button>",
     ], 
 
     [
@@ -46,7 +46,7 @@ let card_content = [
         "<h1>Medium - Large Business</h1>",
         "<p class='price'>Non-Profit</p>",
         "<p>ACO Public Initiatives is a non-profit division aimed at helping spread our values to the world. This includes safety, security, privacy, health, happiness, knowledge, and global citizenship. The impact of our initiatives is huge and it is reflected in everything from policies and accessible design choices. </p>",
-        "<button onclick='window.location.href=`mailto:enterprise@aco.company`;'>Request</button>",
+        "<button onclick='window.location.href=`https://aco.company/enterprise/products/subscriptions`;'>Learn More</button>",
     ], 
 
     [
@@ -54,7 +54,7 @@ let card_content = [
         "<h1>Large Business</h1>",
         "<p class='price'>E-Sports</p>",
         "<p>ACO GAMING is the E-Sports team for ACO that plays in professional legues. ACO GAMING has teams on all major games and has won many championships around the world.</p>",
-        "<button onclick='window.location.href=`mailto:enterprise@aco.company`;'>Request</button>",
+        "<button onclick='window.location.href=`https://aco.company/enterprise/products/subscriptions`;'>Learn More</button>",
     ], 
 
     [
@@ -62,7 +62,7 @@ let card_content = [
         "<h1>Global Business</h1>",
         "<p class='price'>Utilities</p>",
         "<p>ACO Utilities is a work in progress system being designed as a way to get water, electricity, food, and internet inside of one single unit to as many locations on our planet as possible. Prototypes are expected to be designed in the coming months.</p>",
-        "<button onclick='window.location.href=`mailto:enterprise@aco.company`;'>Request</button>",
+        "<button onclick='window.location.href=`https://aco.company/enterprise/products/subscriptions`;'>Learn More</button>",
     ], 
 
     [
