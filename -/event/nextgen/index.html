@@ -2,50 +2,56 @@
 <html>
 <head>
 	<title>ACO NextGen Initial Launch</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="https://i.imgur.com/8ghMfXC.png">
 	<style>
 		body {
-			background-color: #1a1a1a;
-			color: #00bfff;
+			background-color: #1c1c1c;
+			color: #2296f3;
 			font-family: Arial, sans-serif;
-			font-size: 24px;
 			text-align: center;
-			padding-top: 100px;
+			padding-top: 50px;
 		}
-		#countdown {
+		
+		h1 {
 			font-size: 48px;
-			margin-top: 20px;
+			margin-bottom: 50px;
+		}
+		
+		#countdown {
+			font-size: 72px;
+			margin-bottom: 50px;
+		}
+		
+		.info {
+			font-size: 24px;
+			margin-top: 50px;
+			margin-bottom: 20px;
 		}
 	</style>
 </head>
 <body>
 	<h1>ACO NextGen Initial Launch</h1>
-	<p>Countdown to May 15th, 2023 at 15:00 GMT+3:</p>
 	<div id="countdown"></div>
-
+	<div class="info">A link will be available a few hours before the event starts.</div>
 	<script>
-		// Set the date we're counting down to
 		var countDownDate = new Date("May 15, 2023 15:00:00 GMT+0300").getTime();
 
-		// Update the countdown every 1 second
 		var x = setInterval(function() {
 
-		  // Get the current time
 		  var now = new Date().getTime();
 
-		  // Calculate the distance between now and the countdown date
 		  var distance = countDownDate - now;
 
-		  // Calculate the days, hours, minutes and seconds left
 		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		  // Display the countdown in the element with id="countdown"
 		  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
 		  + minutes + "m " + seconds + "s ";
 
-		  // If the countdown is over, display a message
 		  if (distance < 0) {
 		    clearInterval(x);
 		    document.getElementById("countdown").innerHTML = "EXPIRED";
