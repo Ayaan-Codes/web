@@ -1,122 +1,366 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ACO | Support</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACO CONNECT</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Krona+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Krona One', sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
 
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <meta name="title" content="ACO | Support" />
-            <meta name="description" content="" />
-    
-            <link rel="stylesheet" href="https://help.smb.company//110135.cobirosite.com/_assets/spa/glide.core.min.1611945261.css">
-            <link rel="stylesheet" href="https://help.smb.company//110135.cobirosite.com/_assets/spa/styles.5ec88601d4bae9cebcf6.1611945261.css">
-            <link rel="stylesheet" href="https://help.smb.company//110135.cobirosite.com/_assets/assets/css/smooth--azure-radiance.1611945261.css">
-    
-            <script>(function() {window.__env = {SITE_ID: 110135}})()</script>
-    </head>
-<body class="smooth--azure-radiance">
+        p {
+            font-family: 'Comfortaa', sans-serif;
+        }
 
-<section class="smooth--azure-radiance"><div class="builder-container" data-selector="builder-elements">
-      <nav class="bg-background-1 display-flex flex-row align-items-center place-content-space-between position-sticky top-zero z-index-7 w-100 ph-20 ph-40-xl pv-13 pv-20-xl" data-selector="navigation-001">
-          <h4 class=" margin-b-0 h4" data-selector="navigation-001-logo">
-                ACO | Support
-           </h4>
-          <div class="d-flex align-items-center justify-content-center flex-md-row-reverse">
-            
-            <div id="menuToggle">
-                <input id="menuTrigger" type="checkbox" aria-labelledby="menuTriggerLabel" />
-                <label id="menuTriggerLabel" for="menuTrigger">Navigation open</label>
-                
-      <div class="hamburger-wrapper">
-        <span data-selector="navigation-001-hamburger"></span>
-        <span data-selector="navigation-001-hamburger"></span>
-        <span data-selector="navigation-001-hamburger"></span>
-      </div>
-    
-                
-      <ul id="menu" class="bg-background-1">
-         <!---------------
-        <li>
-                <a class="  h6  undefined" data-selector="navigation-001-link" href="/" target="_self">Support</a>
-                </li><li>
-                <a class="  h6  undefined" data-selector="navigation-001-link" href="/tech" target="_self">Tech</a>
-                </li><li>
-                <a class="  h6  undefined" data-selector="navigation-001-link" href="/user" target="_self">User</a>
-                </li><li>
-                <a class="  h6  undefined" data-selector="navigation-001-link" href="/comment" target="_self">Comment</a>
-                </li><li>
-                <a class="  h6  undefined" data-selector="navigation-001-link" href="/payments" target="_self">Payments</a>
-                </li><li>
-                <a class="  h6  undefined" data-selector="navigation-001-link" href="/emergency" target="_self">Emergency</a>
-                </li><li>
-                <a class="  h6  undefined" data-selector="navigation-001-link" href="/other" target="_self">Other</a>
-                </li>
-               -------------->
-      </ul>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .landing {
+            background-color: #202021;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .navbar {
+            background-color: #66a3ff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #3385ff;
+        }
+
+        .section {
+            padding: 100px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .support {
+            background-color: #245cb5;
+        }
+
+        .account {
+            background-color: #245cb5;
+        }
+
+        .corporate {
+            background-color: #245cb5;
+        }
+
+        .community {
+            background-color: #245cb5;
+        }
+
+        .satellite {
+            background-color: #24a7b5;
+        }
+
+        .complaints {
+            background-color: #d18b1b;
+        }
+
+        .emergency {
+            background-color: #d43b15;
+        }
+
+        .prime {
+            background-color: #dbb023;
+        }
+
+        .corporate-customer {
+            background-color: #7917a3;
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            border: 2px solid;
+            text-transform: uppercase;
+            margin: 10px;
+        }
+
+        .button:hover {
+            filter: brightness(90%);
+        }
+
+        .button:hover {
+            background-color: #0066ff;
+        }
+
+        /* Section-specific button styles */
+        .support .button {
+          background-color: #3385ff;
+          border-color: #005ce6;
+          }
+
+        .account .button {
+          background-color: #3385ff;
+          border-color: #005ce6;
+          }
+
+        .corporate .button {
+          background-color: #3385ff;
+          border-color: #005ce6;
+          }
+
+        .community .button {
+          background-color: #3385ff;
+          border-color: #005ce6;
+          }
+
+        .satellite .button {
+            background-color: #1b9488;
+            border-color: #02b08d;
+        }
+
+        .complaints .button {
+          background-color: #c2851d;
+          border-color: #996102;
+          }
+
+        .emergency .button {
+          background-color: #bf0a1c;
+          border-color: #820505;
+          }
+      
+        .prime .button {
+          background-color: #b3a70c;
+          border-color: #8f8503;
+          }
+
+        .corporate-customer .button {
+          background-color: #721596;
+          border-color: #540175;
+          }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center; /* Vertically center the text */
+            justify-content: center; /* Horizontally center the text */
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            border: 2px solid;
+            text-transform: uppercase;
+            height: auto; /* Allow dynamic height */
+            min-height: 50px; /* Minimum height */
+        }
+
+        footer {
+            background-color: #202021;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<section class="landing">
+    <div class="container">
+        <h1>ACO CONNECT</h1>
+        <p>Support - Public Relations - Reporting - Customer Care: ALL IN ONE PORTAL</p>
+        <div class="button-container">
+            <div class="grid-container">
+                <a href="#general" class="button">GENERAL SUPPORT</a>
+                <a href="#account" class="button">ACCOUNT SUPPORT</a>
+                <a href="#corporate" class="button">CORPORATE SUPPORT</a>
+                <a href="#community" class="button">COMMUNITY SUPPORT</a>
+                <a href="#satellite" class="button">SATELLITE BRAND SUPPORT</a>
+                <a href="#complaints" class="button">COMPLAINTS & REPORTS HELPLINE</a>
+                <a href="#emergency" class="button">EMERGENCY HELPLINE</a>
+                <a href="#prime" class="button">PRIME & PRIORITY CUSTOMER SUPPORT</a>
+                <a href="#corporate-customer" class="button">CORPORATE CUSTOMER SUPPORT</a>
             </div>
-          </div>
-      </nav>
-    <div data-selector="header-001-default" class="ph-36 ph-80-md pv-36 pv-120-md pv-200-xl bg-background-1 align-items-center text-center place-content-center flex-row relative d-flex">
-        
-        
-      <div class="black-twenty overlay z-index-1" data-selector="header-001-default-image-layer"></div>
-        
-      <div class="basic-image-cover-wrapper">
-        <img
-      data-selector="header-001-default-image"
-      class="w-100 h-100 mb-zero "
-      src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDh8fGhlbHB8fDB8fHw&ixlib=rb-1.2.1&q=80&w=1080"
-      srcset="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDh8fGhlbHB8fDB8fHw&ixlib=rb-1.2.1&q=80&w=200 200w, https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDh8fGhlbHB8fDB8fHw&ixlib=rb-1.2.1&q=80&w=400 400w, https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDh8fGhlbHB8fDB8fHw&ixlib=rb-1.2.1&q=80&w=1080 1080w, https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDh8fGhlbHB8fDB8fHw&ixlib=rb-1.2.1&q=80&w=1920 1920w, https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDh8fGhlbHB8fDB8fHw&ixlib=rb-1.2.1&q=80&w=2560 2560w"
-      alt=""
-    >
-      </div>
-        <div class="cover p-0 col-12 col-md-10 col-xl-6">
-           <h1 class="text-secondary margin-b-20 h1 " data-selector="header-001-default-title">
-                ACO Support
-           </h1><p class="text-secondary margin-b-40 display-4 " data-selector="header-001-default-subheader">
-                How can we help you?
-            </p><a
-                class="btn  btn-lg btn-primary"
-                data-selector="header-001-default-button"
-                href="https://ayaan-codes.github.io/a-co/contact.html">
-                Contact Us
-            </a>
         </div>
     </div>
-    
-      <div class="horizontal-columnized bg-background-1 pv-60 ph-0 pv-80-md pv-100-xl ph-190-xl" data-selector="feature-005-primary">
-        
-      <div class="horizontal-cards">
-        <div class="d-flex padding-zero margin-zero horizontal-cards-row">
-          <div class="col-12 col-sm-10 col-md-6 col-xl-4">
-              
-        <figure data-selector="feature-005-primary-first" class="bg-background-3 h-100">
-          
-    <div data-selector="feature-005-primary-first-image-wrapper" class="img-cover-wrapper ph-0 pv-0  align-items-stretch place-content-center margin-b-0 image-scale-3to2 col-12 relative d-flex">
-        <img
-      data-selector="feature-005-primary-first-image"
-      class="w-100 h-100  "
-      src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDE2fHx0ZWNofHwwfHx8&ixlib=rb-1.2.1&q=80&w=1080"
-      srcset="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDE2fHx0ZWNofHwwfHx8&ixlib=rb-1.2.1&q=80&w=200 200w, https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDE2fHx0ZWNofHwwfHx8&ixlib=rb-1.2.1&q=80&w=400 400w, https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDE2fHx0ZWNofHwwfHx8&ixlib=rb-1.2.1&q=80&w=1080 1080w, https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDE2fHx0ZWNofHwwfHx8&ixlib=rb-1.2.1&q=80&w=1920 1920w, https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw4NjQxOXwwfDF8c2VhcmNofDE2fHx0ZWNofHwwfHx8&ixlib=rb-1.2.1&q=80&w=2560 2560w"
-      alt=""
-    >
-    </div>
-    
-    <footer class="minor-padding overflow-wrap-break-word text-center bg-background-1" data-selector="footer-001">
-      <h4 class=" h4 mb-small" data-selector="footer-001-logo">
-                ACO | Support
-           </h4>
-      <div class="col-12 lh-40 display-none-lt-md mb-large padding-zero" data-selector="footer-001-pages">
-        <a class="  h6 text-decoration-none mx-20 undefined" data-selector="footer-001-link" href="/" target="_self">Support</a><a class="  h6 text-decoration-none mx-20 undefined" data-selector="footer-001-link" href="/tech" target="_self">Tech</a><a class="  h6 text-decoration-none mx-20 undefined" data-selector="footer-001-link" href="/user" target="_self">User</a><a class="  h6 text-decoration-none mx-20 undefined" data-selector="footer-001-link" href="/comment" target="_self">Comment</a><a class="  h6 text-decoration-none mx-20 undefined" data-selector="footer-001-link" href="/payments" target="_self">Payments</a><a class="  h6 text-decoration-none mx-20 undefined" data-selector="footer-001-link" href="/emergency" target="_self">Emergency</a><a class="  h6 text-decoration-none mx-20 undefined" data-selector="footer-001-link" href="/other" target="_self">Other</a>
-      </div>
-      
-    </footer>
-    </div></section>
+</section>
 
-    <script type="application/javascript" src="https://help.smb.company//110135.cobirosite.com/_assets/spa/_assets/js/1_glide.min.site.1611945261.js"></script>
-    <script type="application/javascript" src="https://help.smb.company//110135.cobirosite.com/_assets/spa/_assets/js/form-submit.site.1611945261.js"></script>
-    <script type="application/javascript" src="https://help.smb.company//110135.cobirosite.com/_assets/spa/_assets/js/load-carousel.site.1611945261.js"></script>
-    <script type="application/javascript" src="https://help.smb.company//110135.cobirosite.com/_assets/assets/js/web-shop-web-components/web-shop.site.1611945261.js"></script>
+<!-- Sections for support -->
+<section id="general" class="section support">
+    <div class="container">
+        <h1>GENERAL SUPPORT</h1>
+        <div class="section-content">
+            <p>If you need general assistance or have questions about our services, our support team is here to help. Please use this option if your issue or question do not meet any of the other catagories.</p>
+            <div class="button-container">
+                <a href="mailto:aco.development.studio@gmail.com?subject=ACO CONNECT - GENERAL SUPPORT:" class="button">MAIL</a>
+                <a href="tel:000-000-0000" class="button">CALL</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="account" class="section account">
+    <div class="container">
+        <h1>ACCOUNT SUPPORT</h1>
+        <div class="section-content">
+            <p>If you need assistance with your account or have account-related inquiries, our support team is available to assist you.</p>
+            <div class="button-container">
+                <a href="mailto:aco.development.studio@gmail.com?subject=ACO CONNECT - ACCOUNT SUPPORT:" class="button">MAIL</a>
+                <a href="tel:000-000-0000" class="button">CALL</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="corporate" class="section corporate">
+    <div class="container">
+        <h1>CORPORATE SUPPORT</h1>
+        <div class="section-content">
+            <p>For information and support regarding ACO Corporate please contact our corporate support.</p>
+            <div class="button-container">
+                <a href="mailto:aco.development.studio@gmail.com?subject=ACO CONNECT - CORPORATE SUPPORT:" class="button">MAIL</a>
+                <a href="tel:000-000-0000" class="button">CALL</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="community" class="section community">
+    <div class="container">
+        <h1>COMMUNITY SUPPORT</h1>
+        <div class="section-content">
+            <p>Our community support team is here to address community-related inquiries and provide support to our community members.</p>
+            <div class="button-container">
+                <a href="mailto:aco.development.studio@gmail.com?subject=ACO CONNECT - COMMUNITY SUPPORT:" class="button">MAIL</a>
+                <a href="tel:000-000-0000" class="button">CALL</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="satellite" class="section satellite">
+    <div class="container">
+        <h1>SATELLITE BRAND SUPPORT</h1>
+        <div class="section-content">
+            <p>If you need support or assistance with our satellite brands, our support team for satellite brands and services are here to assist you.</p>
+            <div class="button-container">
+                <a href="mailto:aco.development.studio@gmail.com?subject=ACO CONNECT - SATELLITE BRAND SUPPORT:" class="button">MAIL</a>
+                <a href="tel:000-000-0000" class="button">CALL</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="complaints" class="section complaints">
+    <div class="container">
+        <h1>COMPLAINTS & REPORTS HELPLINE</h1>
+        <div class="section-content">
+            <p>If you have complaints or need to report any issues, please contact our complaints and reports helpline for assistance.</p>
+            <div class="button-container">
+                <a href="mailto:aco.development.studio@gmail.com?subject=ACO CONNECT - COMPLAINTS & REPORTS HELPLINE:" class="button">MAIL</a>
+                <a href="tel:000-000-0000" class="button">CALL</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="emergency" class="section emergency">
+    <div class="container">
+        <h1>EMERGENCY HELPLINE</h1>
+        <div class="section-content">
+            <p>For emergency situations requiring immediate assistance, please contact our emergency helpline for prompt support. Please only use this helpline if your issue is actually urgent and make sure to call your local emergency service if you are in real world danger.</p>
+            <div class="button-container">
+                <a href="mailto:aco.development.studio@gmail.com?subject=ACO CONNECT - EMERGENCY HELPLINE:" class="button">MAIL</a>
+                <a href="tel:000-000-0000" class="button">CALL</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="prime" class="section prime">
+    <div class="container">
+        <h1>PRIME & PRIORITY CUSTOMER SUPPORT</h1>
+        <div class="section-content">
+            <p>Prime and priority customers can access dedicated support services tailored to their needs and requirements.</p>
+            <div class="button-container">
+                <a href="mailto:aco.development.studio@gmail.com?subject=ACO CONNECT - PRIME & PRIORITY CUSTOMER SUPPORT:" class="button">MAIL</a>
+                <a href="tel:000-000-0000" class="button">CALL</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="corporate-customer" class="section corporate-customer">
+    <div class="container">
+        <h1>CORPORATE CUSTOMER SUPPORT</h1>
+        <div class="section-content">
+            <p>For corporate customers needing specialized support or assistance, our corporate customer support team is available to assist you.</p>
+            <div class="button-container">
+                <a href="mailto:aco.development.studio@gmail.com?subject=ACO CONNECT - CORPORATE CUSTOMER SUPPORT:" class="button">MAIL</a>
+                <a href="tel:000-000-0000" class="button">CALL</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <p style="text-align: center;">
+        <a href="https://aco.company">ACO</a> |
+        <a href="/#">SUPPORT</a> |
+        <a href="/#">SOCIAL</a>
+    </p>
+</footer>
 </body>
 </html>
