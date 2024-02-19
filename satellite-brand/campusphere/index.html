@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACO | CampuSphere</title>
+  <link rel="icon" type="image/x-icon" href="/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Lexend&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lexend', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #0CC0DF;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 390px; /* 30% larger */
+            background-color: white; 
+            padding: 5px; 
+            border-radius: 5px; 
+        }
+
+        .landing {
+            background-color: #ffffff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .landing p {
+            color: #333333; /* Changed color for better visibility */
+        }
+
+        .mission {
+            background-color: #0CC0DF;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .mission .card {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 30%; /* 3 cards wide */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .solution, .benefits {
+            background-color: #0CC0DF;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+      .mission h2, .benefits h2 {
+          color: #ffffff;
+          text-align: center; /* Align left for consistency */
+      }
+      
+        .solution h2 {
+            color: #ffffff;
+            text-align: left; /* Align left for consistency */
+        }
+
+        .solution p {
+            text-align: left; /* Align left for consistency */
+        }
+
+        .benefits ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid; /* Changed to grid for 5x3 grid layout */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            justify-content: center;
+        }
+
+        .benefits li {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .benefits li a {
+            display: block;
+            text-decoration: none;
+            color: #0CC0DF;
+            cursor: pointer;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #0CC0DF;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            border: 2px solid #0CC0DF;
+            transition: all 0.3s ease;
+        }
+
+      .cta-button-black {
+          display: inline-block;
+          background-color: #000000;
+          color: #0CC0DF;
+          padding: 15px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          border-radius: 5px;
+          border: 2px solid #0CC0DF;
+          transition: all 0.3s ease;
+      }
+      
+        .cta-button:hover {
+            background-color: #0CC0DF;
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #000000; /* Changed to black */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer .cta-button:before {
+            background-color: #000000; /* Changed before hover color */
+        }
+      .solution .mockup {
+          width: 45%; /* Reduced width */
+          max-height: 400px; /* Reduced height */
+          background-color: #ffffff;
+          border-radius: 10px;
+          overflow: hidden;
+      }
+
+      .solution .mockup img {
+          width: 100%;
+          border-radius: 10px;
+      }
+      .solution-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      /* Popup styles */
+      .popup {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0,0,0,0.4);
+      }
+
+      .popup-content {
+          background-color: #fefefe;
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%;
+      }
+
+      .close {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+  <section class="landing">
+    <img src="logo.png" alt="CampuSphere Logo"> <!-- Width is adjusted via CSS -->
+    <h2>Empowering Education, Uniting Communities</h2>
+    <a href="#mission" class="cta-button">LEARN MORE</a> <!-- Link to the mission section -->
+  </section>
+
+  <section class="mission" id="mission">
+      <div class="container">
+          <h2>MISSION</h2>
+          <div class="card">
+              <h3>🎓</h3>
+              <h4>Empower Students</h4>
+              <p>Our mission is to empower students by providing them with tools and resources to succeed academically and personally.</p>
+          </div>
+          <div class="card">
+              <h3>🤝</h3>
+              <h4>Facilitate Community Engagement</h4>
+              <p>We aim to facilitate community engagement among students, fostering collaboration and networking opportunities.</p>
+          </div>
+          <div class="card">
+              <h3>📣</h3>
+              <h4>Promote Student Voice</h4>
+              <p>Our goal is to promote student voice and advocacy, ensuring that every student's opinion is heard and respected.</p>
+          </div>
+      </div>
+  </section>
+
+
+
+  <section class="solution">
+    <div class="container">
+      <div class="solution-container">
+        <div class="mockup">
+          <img src="/mock.png" alt="Solution Mockup">
+        </div>
+        <div style="width: 45%; text-align: left;">
+          <h2>SOLUTION</h2>
+          <p>Introducing an innovative app designed to bridge the gap between students, fostering meaningful connections and productive collaboration even from the comfort of their homes. This application serves as a platform for students to engage with their peers in a semi-formal setting, facilitating communication and relationship-building regardless of prior acquaintance.
+<br><br>
+          At the heart of this app lies the Student Community Center, a dynamic space where student voices resonate. Here, individuals have the opportunity to voice their opinions through anonymous polls, discussing and debating various school policies and initiatives. This feature not only empowers students to express their viewpoints freely but also promotes a culture of inclusivity and democratic participation within the student body.
+            <br><br>
+          Moreover, the app goes beyond traditional communication tools by offering additional functionalities tailored to enhance the student experience. Whether collaborating on group projects, seeking academic support, or simply fostering friendships, students can leverage the platform's diverse features to navigate their educational journey with greater ease and efficiency.
+            <br><br>
+          In essence, this app represents more than just a communication tool—it's a catalyst for positive change, fostering a vibrant community where every voice matters and every student is empowered to thrive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+      <div class="container">
+          <h2>BENEFITS</h2>
+          <ul>
+              <li><a href="#" class="cta-button" onclick="showPopup('Boosted Student Satisfaction', 'Our platform enhances student satisfaction by providing a user-friendly interface and valuable resources for academic and personal growth.')">🔥 Boosted Student Satisfaction</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Enhanced Student Voice', 'We empower students to express their opinions and ideas, fostering a vibrant community where every voice matters.')">🚀 Enhanced Student Voice</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Improved School Publicity', 'Our platform increases school visibility through effective communication channels and engaging content, attracting attention and recognition from the community.')">💡 Improved School Publicity</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Increased Student Engagement', 'We promote active student participation through interactive features and collaborative initiatives, creating a dynamic learning environment for all.')">🌟 Increased Student Engagement</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Streamlined Administrative Processes', 'Our platform simplifies administrative tasks and workflows, saving time and resources while improving efficiency and organization.')">🔄 Streamlined Administration</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Enhanced Communication Channels', 'We facilitate seamless communication between students, faculty, and staff, fostering collaboration and transparency across the institution.')">📢 Enhanced Communication</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Improved Access to Resources', 'Our platform provides easy access to educational materials, support services, and extracurricular opportunities, promoting student success and well-being.')">📚 Improved Access to Resources</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Personalized Learning Experience', 'We offer personalized learning tools and adaptive technologies, catering to diverse student needs and learning styles for optimal academic outcomes.')">🎓 Personalized Learning</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Enhanced Data Analytics', 'Our platform offers comprehensive data analytics and insights, empowering educators and administrators to make informed decisions and drive institutional improvements.')">📊 Enhanced Data Analytics</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Improved Student Retention', 'Our platform supports student retention efforts through proactive interventions, academic support services, and community-building initiatives.')">💪 Improved Student Retention</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Enhanced Collaboration Opportunities', 'We foster collaboration and teamwork among students, faculty, and staff, promoting interdisciplinary learning and innovative problem-solving skills.')">🤝 Enhanced Collaboration</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Increased Parental Engagement', 'Our platform strengthens the connection between parents and the school community, providing transparent communication and opportunities for involvement in their child’s education.')">👨‍👩‍👧 Increased Parental Engagement</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Improved Accessibility Features', 'We prioritize accessibility and inclusivity by offering features and accommodations for students with diverse abilities and learning needs.')">♿ Improved Accessibility Features</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Efficient Resource Allocation', 'Our platform optimizes resource allocation and utilization, ensuring that funds, materials, and personnel are allocated effectively to support student success and institutional goals.')">💰 Efficient Resource Allocation</a></li>
+              <li><a href="#" class="cta-button" onclick="showPopup('Enhanced Campus Safety', 'Our platform enhances campus safety and security through emergency notification systems, safety protocols, and proactive risk management strategies.')">🛡️ Enhanced Campus Safety</a></li>
+          </ul>
+      </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <a href="https://aco.company" class="cta-button-black">ACO Satellite Brand - CampuSphere</a>
+    </div>
+  </footer>
+
+  <!-- Popup box -->
+  <div id="popup1" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hidePopup()">&times;</span>
+      <h2 id="popup-title">Title</h2>
+      <p id="popup-content">Content</p>
+    </div>
+  </div>
+
+  <script>
+    function showPopup(title, content) {
+      document.getElementById('popup-title').innerText = title;
+      document.getElementById('popup-content').innerText = content;
+      document.getElementById('popup1').style.display = 'block';
+    }
+
+    function hidePopup() {
+      document.getElementById('popup1').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
