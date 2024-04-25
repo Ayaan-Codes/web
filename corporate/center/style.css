@@ -394,10 +394,10 @@ img {
     transition-duration: 200ms; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .header-area .alazea-main-menu .classy-navbar .classy-menu {
-        background-color: #111111; } }
+        background-color: #202021; } }
     @media only screen and (max-width: 767px) {
       .header-area .alazea-main-menu .classy-navbar .classy-menu {
-        background-color: #111111; } }
+        background-color: #202021; } }
     .header-area .alazea-main-menu .classy-nav-container {
       background-color: transparent; }
     .header-area .alazea-main-menu .classy-navbar {
@@ -420,13 +420,13 @@ img {
           padding: 0 20px; } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .header-area .alazea-main-menu .classynav ul li a {
-          background-color: #111111;
+          background-color: #202021;
           font-size: 16px;
           color: #ffffff;
           border-bottom: none; } }
       @media only screen and (max-width: 767px) {
         .header-area .alazea-main-menu .classynav ul li a {
-          background-color: #111111;
+          background-color: #202021;
           font-size: 16px;
           color: #ffffff;
           border-bottom: none; } }
