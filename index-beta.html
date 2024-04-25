@@ -106,7 +106,7 @@
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
     
     var that = this;
-    var delta = 300 - Math.random() * 100;
+    var delta = 150 - Math.random() * 100;
     
     if (this.isDeleting) { delta /= 2; }
     
@@ -144,7 +144,7 @@
    function disableCtrlKeyCombination(e)
    {
    //list all CTRL + key combinations you want to disable
-   var forbiddenKeys = new Array('a', 'b', 'c', 'd', 'e', 'f' , 'g', 'h', '', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',);
+   var forbiddenKeys = new Array('a', 'b', 'c', 'd', 'e', 'f' , 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',);
    var key;
    var isCtrl;
    if(window.event)
