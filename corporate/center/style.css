@@ -189,8 +189,8 @@ img {
     border-radius: 50%;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
-    -webkit-animation: zoom 2000ms infinite ease;
-    animation: zoom 2000ms infinite ease; }
+    -webkit-animation: zoom 20ms infinite ease;
+    animation: zoom 20ms infinite ease; }
   .preloader .preloader-img {
     position: absolute;
     top: 50%;
