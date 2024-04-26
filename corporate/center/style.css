@@ -1588,7 +1588,7 @@ img {
     position: relative;
     z-index: -21;
     border-radius: 6px; }
-  .alazea-video-area .video-icon {
+  /* .alazea-video-area .video-icon {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     width: 70px;
@@ -1604,7 +1604,7 @@ img {
     line-height: 72px;
     text-align: center;
     cursor: pointer;
-    opacity: 0.9; }
+    opacity: 0.9; } */
     .alazea-video-area .video-icon i {
       color: #ffffff;
       font-size: 24px; }
