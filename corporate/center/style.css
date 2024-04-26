@@ -1452,7 +1452,7 @@ img {
       .testimonials-slides .owl-dots .owl-dot::after {
         width: 4px;
         height: 4px;
-        background-color: #70c745;
+        background-color: #202021;
         border-radius: 50%;
         content: '';
         position: absolute;
@@ -1462,7 +1462,7 @@ img {
         opacity: 0;
         visibility: hidden; }
       .testimonials-slides .owl-dots .owl-dot.active {
-        border-color: #70c745; }
+        border-color: #202021; }
         .testimonials-slides .owl-dots .owl-dot.active::after {
           opacity: 1;
           visibility: visible; }
@@ -1488,7 +1488,7 @@ img {
     margin-bottom: 0; }
   .single-testimonial-slide .testimonial-content .testimonial-author-info p {
     margin-bottom: 0;
-    color: #70c745; }
+    color: #202021; }
 
 /* :: 12.0 About Us Area CSS */
 .about-us-area {
