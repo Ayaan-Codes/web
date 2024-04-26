@@ -37,7 +37,7 @@
             dots: false,
             autoplay: true,
             center: true,
-            autoplayTimeout: 50000,
+            autoplayTimeout: 30000,
             smartSpeed: 1000
         });
 
