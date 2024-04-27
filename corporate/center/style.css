@@ -2068,7 +2068,7 @@ img {
     line-height: 1.5;
     margin-bottom: 15px; }
     .single-blog-post .post-content .post-title h5:hover {
-      color: #70c745; }
+      color: #000000; }
   .single-blog-post .post-content .post-meta {
     position: relative;
     z-index: 1;
@@ -2096,7 +2096,7 @@ img {
     color: #707070;
     margin-bottom: 0; }
   .single-blog-post:hover .post-content .post-title h5 {
-    color: #70c745; }
+    color: #5e5e5f; }
 
 .pagination {
   position: relative;
