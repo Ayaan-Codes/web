@@ -281,8 +281,8 @@ img {
   min-width: 150px;
   height: 46px;
   color: #ffffff;
-  background-color: #70c745;
-  border: 2px solid #70c745;
+  background-color: #202021;
+  border: 2px solid #202021;
   border-radius: 2px;
   padding: 0 20px;
   font-size: 16px;
@@ -291,7 +291,7 @@ img {
   font-weight: 600; }
   .alazea-btn.active, .alazea-btn:hover, .alazea-btn:focus {
     font-size: 16px;
-    color: #70c745;
+    color:#202021;
     font-weight: 600;
     background-color: transparent;
     box-shadow: none; }
