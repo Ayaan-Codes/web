@@ -1,130 +1,463 @@
-<!DOCTYPE html>
-<html lang="en/us">
-    <head>
-        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-        <link rel="manifest" href="site.webmanifest">
-        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/bootstrap.css">
-<!--META META META META META META META EMBEDS META META META META META META META META META META META META META META-->
-<meta name=description content="Official Website">
-<meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-<meta itemprop=name content=ACO>
-<meta itemprop=description content="Official Website">
-<meta itemprop=image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
-<meta name=twitter:card content=summary_large_image>
-<meta name=twitter:title content=ACO Website>
-<meta name=twitter:description content="Official Website">
-<meta name=twitter:image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
-<meta property=og:title content=ACO Website>
-<meta property=og:url content=https://ayaan-codes.github.io/web>
-<meta property=og:site_name content=ACO>
-<meta property=og:type content=website>
-<meta property=og:description content="Official Website">
-<meta property=og:image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
-<!--META META META META META META META EMBEDS META META META META META META META META META META META META META META-->
-<title>ACO | Connect</title>
-<link rel="apple-touch-icon" sizes="180x180" href="https://aco.company/images/favicon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://aco.company/images/favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://aco.company/images/favicon.png">
-<script>
-            function disableCtrlKeyCombination(e)
-            {
-            //list all CTRL + key combinations you want to disable
-            var forbiddenKeys = new Array('a', 'b', 'c', 'd', 'e', 'f' , 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',);
-            var key;
-            var isCtrl;
-            if(window.event)
-            {
-            key = window.event.keyCode;     //IE
-            if(window.event.ctrlKey)
-            isCtrl = true;
-            else
-            isCtrl = false;
-            }
-            else
-            {
-            key = e.which;     //firefox
-            if(e.ctrlKey)
-            isCtrl = true;
-            else
-            isCtrl = false;
-            }
-            //if ctrl is pressed check if other key is in forbidenKeys array
-            if(isCtrl)
-            {
-            for(i=0; i<forbiddenKeys.length; i++)
-            {
-            //case-insensitive comparation
-            if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
-            {
-            alert('🔴 ACO WebModeration™ : ctrl + '+String.fromCharCode(key) +' has been disabled for security reasons.');
-            return false;
-            }
-            }
-            }
-            return true;
-            }
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <style>
-            section header {
-                font-family: 'Comfortaa';
-                font-size: 62px;
-            }
-        </style>
-        <script src="security.js"></script>
-    </head>
-    <body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
-        <section id="navbar">
-            <nav class="navbar navbar-expand-lg navbar-dark navbar-blue">
-                <a class="navbar-brand" href="https://aco.company"><img src="../images/icoSmall.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://aco.company/">Corporate</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="https://aco.company/corporate/about/">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="https://aco.company/corporate/products/">Products</a>
-                        </li>
-                        <li class="nav-item active">
-                           <a class="nav-link" href="https://aco.company/corporate/contact/">Contact Us <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="https://aco.company/corporate/general/">Updates/More</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-brand" href="https://aco.company/account"><img src="https://aco.company/images/50x50accountsholder.png"></a>
-                         </li>
-                     </ul>
+
+<html>
+<!--
+╭━━━┳━━━┳━━━╮
+┃╭━╮┃╭━╮┃╭━╮┃
+┃┃╱┃┃┃╱╰┫┃╱┃┃
+┃╰━╯┃┃╱╭┫┃╱┃┃
+┃╭━╮┃╰━╯┃╰━╯┃
+╰╯╱╰┻━━━┻━━━╯
+-->
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
+   <head>
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
+
+   <!--🔼Visual Head\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ACO | Connect</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://aco.company/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://aco.company/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://aco.company/images/favicon.png">
+   <!--🔼Visual Head\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+   <!--🎨Style CSS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+    <link rel="stylesheet" href="https://aco.company/corporate/center/style.css">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/style.scss">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/magnific-popup.css">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/font-awesome.min.css">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/elegant-icon.css">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/classy-nav.css">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/bootstrap.min.css">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/animate.css">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/_theme_color.scss">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/_responsive.scss">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/_mixin.scss">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/_fonts.scss">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/style.css.map">
+
+    <link href='https://aco.company/corporate/center/fontawesome-webfont.woff2' rel='stylesheet' type='text/css'>
+    <link href='https://aco.company/corporate/center/fontawesome-webfont.woff' rel='stylesheet' type='text/css'>
+    <link href='https://aco.company/corporate/center/fontawesome-webfont.eot' rel='stylesheet' type='text/css'>
+    <link href='https://aco.company/corporate/center/ElegantIcons.woff' rel='stylesheet' type='text/css'>
+    <link href='https://aco.company/corporate/center/ElegantIcons.eot' rel='stylesheet' type='text/css'>
+    <link href='https://aco.company/corporate/center/classy.woff' rel='stylesheet' type='text/css'>
+    <link href='https://aco.company/corporate/center/classy.eot' rel='stylesheet' type='text/css'>
+    <link href='https://aco.company/corporate/center/fontawesome-webfont.ttf' rel='stylesheet' type='text/css'>
+    <link href='https://aco.company/corporate/center/ElegantIcons.ttf' rel='stylesheet' type='text/css'>
+    <link href='https://aco.company/corporate/center/FontAwesome.otf' rel='stylesheet' type='text/css'>
+    <link href='https://aco.company/corporate/center/classy.ttf' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+   <!--🎨Style CSS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+   <!--✨META META META META META META META EMBEDS META META META META META META META META META META META META META META-->
+   <meta name=description content="Official Website">
+   <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+   <meta itemprop=name content=ACO>
+   <meta itemprop=description content="Official Website">
+   <meta itemprop=image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
+   <meta name=twitter:card content=summary_large_image>
+   <meta name=twitter:title content=ACO Website>
+   <meta name=twitter:description content="Official Website">
+   <meta name=twitter:image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
+   <meta property=og:title content=ACO Website>
+   <meta property=og:url content=https://ayaan-codes.github.io/web>
+   <meta property=og:site_name content=ACO>
+   <meta property=og:type content=website>
+   <meta property=og:description content="Official Website">
+   <meta property=og:image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
+<!--✨META META META META META META META EMBEDS META META META META META META META META META META META META META META-->
+<!--📄Script JS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+   <noscript><meta http-equiv="refresh" content="0;url=https://ayaan-codes.github.io/doit/enable-js.html"></noscript>
+   <script src="https://ayaan-codes.github.io/packages/script/scriptone.js"></script>
+   <script src="https://ayaan-codes.github.io/packages/script/scripttwo.js"></script>
+   <script src="https://ayaan-codes.github.io/packages/script/scriptthree.js"></script>
+   <script src="https://ayaan-codes.github.io/packages/script/security.js"></script>
+   <script>
+    var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 200;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+    };
+    
+    TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+    
+    if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+    
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    
+    var that = this;
+    var delta = 150 - Math.random() * 100;
+    
+    if (this.isDeleting) { delta /= 2; }
+    
+    if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+    }
+    
+    setTimeout(function() {
+    that.tick();
+    }, delta);
+    };
+    
+    window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+    };
+ </script>
+   <script>
+   function disableCtrlKeyCombination(e)
+   {
+   //list all CTRL + key combinations you want to disable
+   var forbiddenKeys = new Array('a', 'b', 'c', 'd', 'e', 'f' , 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',);
+   var key;
+   var isCtrl;
+   if(window.event)
+   {
+   key = window.event.keyCode;     //IE
+   if(window.event.ctrlKey)
+   isCtrl = true;
+   else
+   isCtrl = false;
+   }
+   else
+   {
+   key = e.which;     //firefox
+   if(e.ctrlKey)
+   isCtrl = true;
+   else
+   isCtrl = false;
+   }
+   //if ctrl is pressed check if other key is in forbidenKeys array
+   if(isCtrl)
+   {
+   for(i=0; i<forbiddenKeys.length; i++)
+   {
+   //case-insensitive comparation
+   if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+   {
+   alert('🔴 ACO WebModeration™ : ctrl + '+String.fromCharCode(key) +' has been disabled for security reasons.');
+   return false;
+   }
+   }
+   }
+   return true;
+   }
+   var $root = $('html, body');
+
+   $('a[href^="#"]').click(function() {
+   var href = $.attr(this, 'href');
+
+   $root.animate({
+   scrollTop: $(href).offset().top
+   }, 500, function () {
+   window.location.hash = href;
+   });
+
+   return false;
+   });
+   </script>
+   <script language=JavaScript>
+      //Disable right mouse click Script
+      
+      var message="🔴 ACO WebModeration™ : Right click has been disabled for security reasons.";
+      
+      function clickIE4(){
+      if (event.button==2){
+      alert(message);
+      return false;
+       }
+      }
+      
+      function clickNS4(e){
+      if (document.layers||document.getElementById&&!document.all){
+      if (e.which==2||e.which==3){
+      alert(message);
+      return false;
+      }
+      }
+      }
+      
+      if (document.layers){
+      document.captureEvents(Event.MOUSEDOWN);
+      document.onmousedown=clickNS4;
+      }
+      else if (document.all&&!document.getElementById){
+      document.onmousedown=clickIE4;
+      }
+      
+      document.oncontextmenu=new Function("alert(message);return false")
+   </script>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--📄Script JS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
+</head>
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
+<body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
+    <!----
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="https://aco.company/corporate/center/img/core-img/xxx.png" alt="">
+        </div>
+    </div>
+    ---->
+
+    <header class="header-area">
+
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+
+                        <!-- Nav Brand -->
+                        <a href="https://aco.company" class="nav-brand"><img src="https://aco.company/images/icoSmall.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Navbar Start -->
+                            <div class="classynav" style="font-family: Comfortaa; padding-top: 25px; padding-left: 33px;">
+                                <ul>
+                                <!--<li><a href="https://aco.company/">Home</a></li>-->
+                                    <li><a href="https://aco.company/corporate/about/">CORPORATE</a></li>
+                                    <li><a href="https://aco.company/corporate/products/">PRODUCTS & BRANDS</a>
+                                    <li><a href="https://aco.company/corporate/contact/">CONNECT</a></li>
+                                    <li><a href="https://aco.company/account/"><img src="https://aco.company/corporate/center/ACOicon-AVATARHOLDER.png" style="height: 30px;"></a></li>
+                                    <li><a href="https://aco.company/corporate/general/"><img src="https://aco.company/corporate/center/ACOsymbol-VERTICALDOTDOTDOT.png" style="height: 30px;"></a></li>
+                                </ul>
+
+                                <!-- Search Icon 
+                                <div id="searchIcon">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                                -->
+
+                            </div>
+                            <!-- Navbar End -->
+                        </div>
+                    </nav>
+
+                    <!-- Search Form 
+                    <div class="search-form">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Type keywords &amp; press enter...">
+                            <button type="submit" class="d-none"></button>
+                        </form>
+                        -->
+                        <!-- Close Icon
+                        <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
+                        -->
+                    </div>
                 </div>
-            </nav>
-        </section>
-        <section>
-            <header class="home">Contact Us</header>
-            <a class="buttonss" href="#explore">CONNECT</a> <br><br><br><br><br><br><br><br><br><br><br>
-        </section>
-        <section class="explore" id="explore">
-            <div id="Container"
-                  style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
-                  <iframe id="CONTACTUS" width="100%" height="100%" src="https://aco.company/corporate/contact/content.html" frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0"></iframe>
             </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <section class="explore" id="explore">
+        <div id="Container"
+              style="padding-bottom:56.25%; position:relative; display:block; width: 100%; height: 5000px;">
+              <iframe id="ABOUTUS" width="100%" height="5000px" src="https://aco.company/corporate/contact/content.html" frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0"></iframe>
+        </div>
         </section>
-<!--FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER -->
-<section id="iframe" class="iframe" marginwidth="0" marginheight="0">
-    <iframe id="FOOTER" src="https://aco.company/-/pageparts/footer.html" width="100%" height="100%" frameborder="0"></iframe>
- </section>
- <!--FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER -->
-  
-    </body>
+
+    <!-- ##### Footer Area Start ##### -->
+    <br>
+    <footer class="footer-area bg-img" style="background-image: url(https://aco.company/corporate/center/img/bg-img/ACOfooter-SPACE.jpg);">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="footer-logo mb-30">
+                                <a href="https://aco.company"><img src="https://aco.company/images/icoSmall.png" alt=""></a>
+                            </div>
+                            <p style="font-family: Comfortaa;">Brighter Days Ahead</p>
+                            <div class="social-info">
+                                <p style="font-family: Comfortaa;"></p>
+                                <!--
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5 style="font-family: Krona One;">PAGES</h5>
+                            </div>
+                            <nav class="widget-nav">
+                                <ul>
+                                    <li><a href="https://aco.company/corporate/about/" style="font-family: Lexend;">Corporate</a></li>
+                                    <li><a href="https://aco.company/corporate/products/" style="font-family: Lexend;">Portfolio</a></li>
+                                    <li><a href="https://aco.company/corporate/contact/" style="font-family: Lexend;">Connect</a></li>
+                                    <li><a href="https://aco.company/-/-/" style="font-family: Lexend;">Pages</a></li>
+                                    <li><a href="https://aco.company/account" style="font-family: Lexend;">Accounts</a></li>
+                                    <li><a href="https://aco.company/-/-/" style="font-family: Lexend;">Events</a></li>
+                                    <li><a href="https://aco.company/-/social-media/" style="font-family: Lexend;">Media</a></li>
+                                    <li><a href="https://aco.company/-/departments/index.html" style="font-family: Lexend;">Internal</a></li>
+                                    <li><a href="https://aco.company/-/legal" style="font-family: Lexend;">Legal Center</a></li>
+                                    <li><a href="https://aco.company/-/page/general/ACO-International-Governmental-Affairs.pdf" style="font-family: Lexend;">International</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5 style="font-family: Krona One;">HIGHLIGHTS</h5>
+                            </div>
+
+                            <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-thumbnail">
+                                    <a href="" style="font-family: Lexend;"><img src="https://aco.company/corporate/center/img/core-img/ACOicon-CAKE.png" alt="" style="height: 70px; width: 70px;"></a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="https://www.youtube.com/watch?v=-dQC5YHa5Cg" style="font-family: Lexend;">9 Years</a>
+                                    <p style="font-family: Lexend;">🎂🎂🎂🎂🎂🎂🎂🎂🎂</p>
+                                </div>
+                            </div>
+
+                            <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-thumbnail">
+                                    <a href="" style="font-family: Lexend;"><img src="https://aco.company/corporate/center/img/core-img/ACOicon-CALENDER.png" alt="" style="height: 70px; width: 70px;"></a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="https://aco.company/corporate/about/" style="font-family: Lexend;">9 Years</a>
+                                    <p style="font-family: Lexend;">Discover Our Legacy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5 style="font-family: Krona One;">ACO @ 9 YEARS</h5>
+                            </div>
+
+                            <div class="contact-information">
+                                <p style="font-family: Lexend;">9 Years Down</p>
+                                <p style="font-family: Lexend;">Infinate Moments Ahead</p>
+                                <p style="font-family: Lexend;"></p>
+                                <p style="font-family: Lexend;"></p>
+                                <p style="font-family: Lexend;"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border-line"></div>
+                    </div>
+
+                    <!-- Footer Nav -->
+                    <div class="col-12 col-md-6">
+                        <div class="footer-nav">
+                            <nav>
+                                <ul>
+                                    <!--
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="https://aco.company/corporate/center/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="https://aco.company/corporate/center/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="https://aco.company/corporate/center/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="https://aco.company/corporate/center/plugins.js"></script>
+    <!-- Active js -->
+    <script src="https://aco.company/corporate/center/active.js"></script>
+</body>
 
 </html>
