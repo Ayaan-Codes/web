@@ -1,550 +1,325 @@
-<!DOCTYPE html>
+
 <html>
+<!--
+╭━━━┳━━━┳━━━╮
+┃╭━╮┃╭━╮┃╭━╮┃
+┃┃╱┃┃┃╱╰┫┃╱┃┃
+┃╰━╯┃┃╱╭┫┃╱┃┃
+┃╭━╮┃╰━╯┃╰━╯┃
+╰╯╱╰┻━━━┻━━━╯
+-->
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
    <head>
-      <title>ACO | Error 404</title>
-      <link rel="icon" 
-         type="image/png" 
-         href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLgp1SDcwvsqUfp1l1vDcjKjRqllz8inX4NA&usqp=CAU">
-      <!--META META META META META META META EMBEDS META META META META META META META META META META META META META META-->
-      <meta name=description content="Official Website">
-      <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-      <meta itemprop=name content=ACO>
-      <meta itemprop=description content="Official Website">
-      <meta itemprop=image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
-      <meta name=twitter:card content=summary_large_image>
-      <meta name=twitter:title content=ACO Website>
-      <meta name=twitter:description content="Official Website">
-      <meta name=twitter:image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
-      <meta property=og:title content=ACO Website>
-      <meta property=og:url content=https://ayaan-codes.github.io/web>
-      <meta property=og:site_name content=ACO>
-      <meta property=og:type content=website>
-      <meta property=og:description content="Official Website">
-      <meta property=og:image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
-      <!--META META META META META META META EMBEDS META META META META META META META META META META META META META META-->
-      <script src="security.js"></script>
-      <script>
-         function disableCtrlKeyCombination(e)
-         {
-         //list all CTRL + key combinations you want to disable
-         var forbiddenKeys = new Array('a', 'b', 'c', 'd', 'e', 'f' , 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',);
-         var key;
-         var isCtrl;
-         if(window.event)
-         {
-         key = window.event.keyCode;     //IE
-         if(window.event.ctrlKey)
-         isCtrl = true;
-         else
-         isCtrl = false;
-         }
-         else
-         {
-         key = e.which;     //firefox
-         if(e.ctrlKey)
-         isCtrl = true;
-         else
-         isCtrl = false;
-         }
-         //if ctrl is pressed check if other key is in forbidenKeys array
-         if(isCtrl)
-         {
-         for(i=0; i<forbiddenKeys.length; i++)
-         {
-         //case-insensitive comparation
-         if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
-         {
-         alert('🔴 ACO WebModeration™ : ctrl + '+String.fromCharCode(key) +' has been disabled for security reasons.');
-         return false;
-         }
-         }
-         }
-         return true;
-         }
-      </script>
-      <style>
-         html,
-         body {
-         height: 100%;
-         width: 100%;
-         margin: 0px;
-         background: linear-gradient(
-         90deg,
-         rgba(47, 54, 64, 1) 23%,
-         rgba(24, 27, 32, 1) 100%
-         );
-         }
-         .moon {
-         background: linear-gradient(
-         90deg,
-         rgba(208, 208, 208, 1) 48%,
-         rgba(145, 145, 145, 1) 100%
-         );
-         position: absolute;
-         top: -100px;
-         left: -300px;
-         width: 900px;
-         height: 900px;
-         content: "";
-         border-radius: 100%;
-         box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.5);
-         }
-         .moon__crater {
-         position: absolute;
-         content: "";
-         border-radius: 100%;
-         background: linear-gradient(
-         90deg,
-         rgba(122, 122, 122, 1) 38%,
-         rgba(195, 195, 195, 1) 100%
-         );
-         opacity: 0.6;
-         }
-         .moon__crater1 {
-         top: 250px;
-         left: 500px;
-         width: 60px;
-         height: 180px;
-         }
-         .moon__crater2 {
-         top: 650px;
-         left: 340px;
-         width: 40px;
-         height: 80px;
-         transform: rotate(55deg);
-         }
-         .moon__crater3 {
-         top: -20px;
-         left: 40px;
-         width: 65px;
-         height: 120px;
-         transform: rotate(250deg);
-         }
-         .star {
-         background: grey;
-         position: absolute;
-         width: 5px;
-         height: 5px;
-         content: "";
-         border-radius: 100%;
-         transform: rotate(250deg);
-         opacity: 0.4;
-         animation-name: shimmer;
-         animation-duration: 1.5s;
-         animation-iteration-count: infinite;
-         animation-direction: alternate;
-         }
-         @keyframes shimmer {
-         from {
-         opacity: 0;
-         }
-         to {
-         opacity: 0.7;
-         }
-         }
-         .star1 {
-         top: 40%;
-         left: 50%;
-         animation-delay: 1s;
-         }
-         .star2 {
-         top: 60%;
-         left: 90%;
-         animation-delay: 3s;
-         }
-         .star3 {
-         top: 10%;
-         left: 70%;
-         animation-delay: 2s;
-         }
-         .star4 {
-         top: 90%;
-         left: 40%;
-         }
-         .star5 {
-         top: 20%;
-         left: 30%;
-         animation-delay: 0.5s;
-         }
-         .error {
-         position: absolute;
-         left: 100px;
-         top: 400px;
-         transform: translateY(-60%);
-         font-family: "Righteous", cursive;
-         color: #363e49;
-         }
-         .error__title {
-         font-size: 10em;
-         }
-         .error__subtitle {
-         font-size: 2em;
-         }
-         .error__description {
-         opacity: 0.5;
-         }
-         .error__button {
-         min-width: 7em;
-         margin-top: 3em;
-         margin-right: 0.5em;
-         padding: 0.5em 2em;
-         outline: none;
-         border: 2px solid #2f3640;
-         background-color: transparent;
-         border-radius: 8em;
-         color: #576375;
-         cursor: pointer;
-         transition-duration: 0.2s;
-         font-size: 0.75em;
-         font-family: "Righteous", cursive;
-         }
-         .error__button:hover {
-         color: #21252c;
-         }
-         .error__button--active {
-         background-color: #e67e22;
-         border: 2px solid #e67e22;
-         color: white;
-         }
-         .error__button--active:hover {
-         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
-         color: white;
-         }
-         .astronaut {
-         position: absolute;
-         width: 185px;
-         height: 300px;
-         left: 70%;
-         top: 50%;
-         transform: translate(-50%, -50%) rotate(20deg) scale(1.2);
-         }
-         .astronaut__head {
-         background-color: white;
-         position: absolute;
-         top: 60px;
-         left: 60px;
-         width: 60px;
-         height: 60px;
-         content: "";
-         border-radius: 2em;
-         }
-         .astronaut__head-visor-flare1 {
-         background-color: #7f8fa6;
-         position: absolute;
-         top: 28px;
-         left: 40px;
-         width: 10px;
-         height: 10px;
-         content: "";
-         border-radius: 2em;
-         opacity: 0.5;
-         }
-         .astronaut__head-visor-flare2 {
-         background-color: #718093;
-         position: absolute;
-         top: 40px;
-         left: 38px;
-         width: 5px;
-         height: 5px;
-         content: "";
-         border-radius: 2em;
-         opacity: 0.3;
-         }
-         .astronaut__backpack {
-         background-color: #bfbfbf;
-         position: absolute;
-         top: 90px;
-         left: 47px;
-         width: 86px;
-         height: 90px;
-         content: "";
-         border-radius: 8px;
-         }
-         .astronaut__body {
-         background-color: #e6e6e6;
-         position: absolute;
-         top: 115px;
-         left: 55px;
-         width: 70px;
-         height: 80px;
-         content: "";
-         border-radius: 8px;
-         }
-         .astronaut__body__chest {
-         background-color: #d9d9d9;
-         position: absolute;
-         top: 140px;
-         left: 68px;
-         width: 45px;
-         height: 25px;
-         content: "";
-         border-radius: 6px;
-         }
-         .astronaut__arm-left1 {
-         background-color: #e6e6e6;
-         position: absolute;
-         top: 127px;
-         left: 9px;
-         width: 65px;
-         height: 20px;
-         content: "";
-         border-radius: 8px;
-         transform: rotate(-30deg);
-         }
-         .astronaut__arm-left2 {
-         background-color: #e6e6e6;
-         position: absolute;
-         top: 102px;
-         left: 7px;
-         width: 20px;
-         height: 45px;
-         content: "";
-         border-radius: 8px;
-         transform: rotate(-12deg);
-         border-top-left-radius: 8em;
-         border-top-right-radius: 8em;
-         }
-         .astronaut__arm-right1 {
-         background-color: #e6e6e6;
-         position: absolute;
-         top: 113px;
-         left: 100px;
-         width: 65px;
-         height: 20px;
-         content: "";
-         border-radius: 8px;
-         transform: rotate(-10deg);
-         }
-         .astronaut__arm-right2 {
-         background-color: #e6e6e6;
-         position: absolute;
-         top: 78px;
-         left: 141px;
-         width: 20px;
-         height: 45px;
-         content: "";
-         border-radius: 8px;
-         transform: rotate(-10deg);
-         border-top-left-radius: 8em;
-         border-top-right-radius: 8em;
-         }
-         .astronaut__arm-thumb-left {
-         background-color: #e6e6e6;
-         position: absolute;
-         top: 110px;
-         left: 21px;
-         width: 10px;
-         height: 6px;
-         content: "";
-         border-radius: 8em;
-         transform: rotate(-35deg);
-         }
-         .astronaut__arm-thumb-right {
-         background-color: #e6e6e6;
-         position: absolute;
-         top: 90px;
-         left: 133px;
-         width: 10px;
-         height: 6px;
-         content: "";
-         border-radius: 8em;
-         transform: rotate(20deg);
-         }
-         .astronaut__wrist-left {
-         background-color: #e67e22;
-         position: absolute;
-         top: 122px;
-         left: 6.5px;
-         width: 21px;
-         height: 4px;
-         content: "";
-         border-radius: 8em;
-         transform: rotate(-15deg);
-         }
-         .astronaut__wrist-right {
-         background-color: #e67e22;
-         position: absolute;
-         top: 98px;
-         left: 141px;
-         width: 21px;
-         height: 4px;
-         content: "";
-         border-radius: 8em;
-         transform: rotate(-10deg);
-         }
-         .astronaut__leg-left {
-         background-color: #e6e6e6;
-         position: absolute;
-         top: 188px;
-         left: 50px;
-         width: 23px;
-         height: 75px;
-         content: "";
-         transform: rotate(10deg);
-         }
-         .astronaut__leg-right {
-         background-color: #e6e6e6;
-         position: absolute;
-         top: 188px;
-         left: 108px;
-         width: 23px;
-         height: 75px;
-         content: "";
-         transform: rotate(-10deg);
-         }
-         .astronaut__foot-left {
-         background-color: white;
-         position: absolute;
-         top: 240px;
-         left: 43px;
-         width: 28px;
-         height: 20px;
-         content: "";
-         transform: rotate(10deg);
-         border-radius: 3px;
-         border-top-left-radius: 8em;
-         border-top-right-radius: 8em;
-         border-bottom: 4px solid #e67e22;
-         }
-         .astronaut__foot-right {
-         background-color: white;
-         position: absolute;
-         top: 240px;
-         left: 111px;
-         width: 28px;
-         height: 20px;
-         content: "";
-         transform: rotate(-10deg);
-         border-radius: 3px;
-         border-top-left-radius: 8em;
-         border-top-right-radius: 8em;
-         border-bottom: 4px solid #e67e22;
-         }
-      </style>
-   </head>
-   <body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
-      <div class="moon"></div>
-      <div class="moon__crater moon__crater1"></div>
-      <div class="moon__crater moon__crater2"></div>
-      <div class="moon__crater moon__crater3"></div>
-      <div class="star star1"></div>
-      <div class="star star2"></div>
-      <div class="star star3"></div>
-      <div class="star star4"></div>
-      <div class="star star5"></div>
-      <div class="error">
-         <div class="error__title">404</div>
-         <div class="error__subtitle">ACO | Error 404</div>
-         <div class="error__description">The page you where looking for is <br> either not working or you have the wrong link, <br> return to the homepage or contact us for help!</div>
-         <br><br>
-         <a href="https://ayaan-codes.github.io/a-co/">ACO Website</a> <br>
-         <a href="https://support.smb.company">Contact Support</a> <br> <br><br><br><br><br> 
-         <a href="https://ayaan-codes.github.io/a-co/spaceinvadegame.html">Fight the space invaders who stole the page!</a>
-      </div>
-      <div class="astronaut">
-         <div class="astronaut__backpack"></div>
-         <div class="astronaut__body"></div>
-         <div class="astronaut__body__chest"></div>
-         <div class="astronaut__arm-left1"></div>
-         <div class="astronaut__arm-left2"></div>
-         <div class="astronaut__arm-right1"></div>
-         <div class="astronaut__arm-right2"></div>
-         <div class="astronaut__arm-thumb-left"></div>
-         <div class="astronaut__arm-thumb-right"></div>
-         <div class="astronaut__leg-left"></div>
-         <div class="astronaut__leg-right"></div>
-         <div class="astronaut__foot-left"></div>
-         <div class="astronaut__foot-right"></div>
-         <div class="astronaut__wrist-left"></div>
-         <div class="astronaut__wrist-right"></div>
-         <div class="astronaut__cord">
-            <canvas id="cord" height="500px" width="500px"></canvas>
-         </div>
-         <div class="astronaut__head">
-            <canvas id="visor" width="60px" height="60px"></canvas>
-            <div class="astronaut__head-visor-flare1"></div>
-            <div class="astronaut__head-visor-flare2"></div>
-         </div>
-      </div>
-      <script>
-         function drawVisor() {
-           const canvas = document.getElementById('visor');
-           const ctx = canvas.getContext('2d');
-           
-           ctx.beginPath();
-           ctx.moveTo(5, 45);
-           ctx.bezierCurveTo(15, 64, 45, 64, 55, 45);
-           
-           ctx.lineTo(55, 20);
-           ctx.bezierCurveTo(55, 15, 50, 10, 45, 10);
-           
-           ctx.lineTo(15, 10);
-           
-           ctx.bezierCurveTo(15, 10, 5, 10, 5, 20);
-           ctx.lineTo(5, 45);
-           
-           ctx.fillStyle = '#2f3640';
-           ctx.strokeStyle = '#f5f6fa';
-           ctx.fill();
-           ctx.stroke();
-         }
-         
-         const cordCanvas = document.getElementById('cord');
-         const ctx = cordCanvas.getContext('2d');
-         
-         let y1 = 160;
-         let y2 = 100;
-         let y3 = 100;
-         
-         let y1Forward = true;
-         let y2Forward = false;
-         let y3Forward = true;
-         
-         function animate() {
-           requestAnimationFrame(animate);
-           ctx.clearRect(0, 0, innerWidth, innerHeight);
-           
-           ctx.beginPath();
-           ctx.moveTo(130, 170);
-           ctx.bezierCurveTo(250, y1, 345, y2, 400, y3);
-           
-           ctx.strokeStyle = 'white';
-           ctx.lineWidth = 8;
-           ctx.stroke();
-          
-           
-           if (y1 === 100) {
-             y1Forward = true;
-           }
-           
-           if (y1 === 300) {
-             y1Forward = false;
-           }
-           
-           if (y2 === 100) {
-             y2Forward = true;
-           }
-           
-           if (y2 === 310) {
-             y2Forward = false;
-           }
-           
-           if (y3 === 100) {
-             y3Forward = true;
-           }
-           
-           if (y3 === 317) {
-             y3Forward = false;
-           }
-           
-           y1Forward ? y1 += 1 : y1 -= 1;
-           y2Forward ? y2 += 1 : y2 -= 1;
-           y3Forward ? y3 += 1 : y3 -= 1;
-         }
-         
-         drawVisor();
-         animate();	
-         	
-      </script>
-   </body>
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
+
+   <!--🔼Visual Head\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ACO | ERROR: (404)</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://aco.company/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://aco.company/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://aco.company/images/favicon.png">
+   <!--🔼Visual Head\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+   <!--🎨Style CSS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+    <link rel="stylesheet" href="https://aco.company/corporate/center/style.css">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/style.scss">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/classy-nav.css">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/bootstrap.min.css">
+    <link rel="stylesheet" href="https://aco.company/corporate/center/style.css.map">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(https://aco.company/corporate/center/img/bg-img/ACObanner-SPACEsmallerplanets.png);
+            background-size: cover;
+        }
+    </style>
+
+   <!--🎨Style CSS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+   <!--✨META META META META META META META EMBEDS META META META META META META META META META META META META META META-->
+   <meta name=description content="Official Website">
+   <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+   <meta itemprop=name content=ACO>
+   <meta itemprop=description content="Official Website">
+   <meta itemprop=image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
+   <meta name=twitter:card content=summary_large_image>
+   <meta name=twitter:title content=ACO Website>
+   <meta name=twitter:description content="Official Website">
+   <meta name=twitter:image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
+   <meta property=og:title content=ACO Website>
+   <meta property=og:url content=https://ayaan-codes.github.io/web>
+   <meta property=og:site_name content=ACO>
+   <meta property=og:type content=website>
+   <meta property=og:description content="Official Website">
+   <meta property=og:image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
+<!--✨META META META META META META META EMBEDS META META META META META META META META META META META META META META-->
+<!--📄Script JS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+   <noscript><meta http-equiv="refresh" content="0;url=https://ayaan-codes.github.io/doit/enable-js.html"></noscript>
+   <script src="https://ayaan-codes.github.io/packages/script/scriptone.js"></script>
+   <script src="https://ayaan-codes.github.io/packages/script/scripttwo.js"></script>
+   <script src="https://ayaan-codes.github.io/packages/script/scriptthree.js"></script>
+   <script src="https://ayaan-codes.github.io/packages/script/security.js"></script>
+   <script>
+    var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 200;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+    };
+    
+    TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+    
+    if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+    
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    
+    var that = this;
+    var delta = 150 - Math.random() * 100;
+    
+    if (this.isDeleting) { delta /= 2; }
+    
+    if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+    }
+    
+    setTimeout(function() {
+    that.tick();
+    }, delta);
+    };
+    
+    window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+    };
+ </script>
+   <script>
+   function disableCtrlKeyCombination(e)
+   {
+   //list all CTRL + key combinations you want to disable
+   var forbiddenKeys = new Array('a', 'b', 'c', 'd', 'e', 'f' , 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',);
+   var key;
+   var isCtrl;
+   if(window.event)
+   {
+   key = window.event.keyCode;     //IE
+   if(window.event.ctrlKey)
+   isCtrl = true;
+   else
+   isCtrl = false;
+   }
+   else
+   {
+   key = e.which;     //firefox
+   if(e.ctrlKey)
+   isCtrl = true;
+   else
+   isCtrl = false;
+   }
+   //if ctrl is pressed check if other key is in forbidenKeys array
+   if(isCtrl)
+   {
+   for(i=0; i<forbiddenKeys.length; i++)
+   {
+   //case-insensitive comparation
+   if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+   {
+   alert('🔴 ACO WebModeration™ : ctrl + '+String.fromCharCode(key) +' has been disabled for security reasons.');
+   return false;
+   }
+   }
+   }
+   return true;
+   }
+   var $root = $('html, body');
+
+   $('a[href^="#"]').click(function() {
+   var href = $.attr(this, 'href');
+
+   $root.animate({
+   scrollTop: $(href).offset().top
+   }, 500, function () {
+   window.location.hash = href;
+   });
+
+   return false;
+   });
+   </script>
+   <script language=JavaScript>
+      //Disable right mouse click Script
+      
+      var message="🔴 ACO WebModeration™ : Right click has been disabled for security reasons.";
+      
+      function clickIE4(){
+      if (event.button==2){
+      alert(message);
+      return false;
+       }
+      }
+      
+      function clickNS4(e){
+      if (document.layers||document.getElementById&&!document.all){
+      if (e.which==2||e.which==3){
+      alert(message);
+      return false;
+      }
+      }
+      }
+      
+      if (document.layers){
+      document.captureEvents(Event.MOUSEDOWN);
+      document.onmousedown=clickNS4;
+      }
+      else if (document.all&&!document.getElementById){
+      document.onmousedown=clickIE4;
+      }
+      
+      document.oncontextmenu=new Function("alert(message);return false")
+   </script>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--📄Script JS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
+
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
+</head>
+<!-----⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕🔴⭕----->
+<body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
+    <!----
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="https://aco.company/corporate/center/img/core-img/xxx.png" alt="">
+        </div>
+    </div>
+    ---->
+
+    <header class="header-area">
+
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+
+                        <!-- Nav Brand -->
+                        <a href="https://aco.company" class="nav-brand"><img src="https://aco.company/images/icoSmall.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Navbar Start -->
+                            <div class="classynav" style="font-family: Comfortaa; padding-top: 25px; padding-left: 33px;">
+                                <ul>
+                                    <!--<li><a href="https://aco.company/">Home</a></li>-->
+                                    <!--<li><a href="https://aco.company/corporate/about/">CORPORATE</a></li>-->
+                                    <!--<li><a href="https://aco.company/corporate/products/">PRODUCTS & BRANDS</a>-->
+                                    <!--<li><a href="https://aco.company/corporate/contact/">CONNECT</a></li>-->
+                                    <li><a href="https://aco.company/account/"><img src="https://aco.company/corporate/center/ACOicon-AVATARHOLDER.png" style="height: 30px;"></a></li>
+                                    <li><a href="https://aco.company/corporate/general/"><img src="https://aco.company/corporate/center/ACOsymbol-VERTICALDOTDOTDOT.png" style="height: 30px;"></a></li>
+                                </ul>
+
+                                <!-- Search Icon 
+                                <div id="searchIcon">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                                -->
+
+                            </div>
+                            <!-- Navbar End -->
+                        </div>
+                    </nav>
+
+                    <!-- Search Form 
+                    <div class="search-form">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Type keywords &amp; press enter...">
+                            <button type="submit" class="d-none"></button>
+                        </form>
+                        -->
+                        <!-- Close Icon
+                        <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!--⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="ERROR" style="text-align: center; padding: 50px 0; color: white; font-family: 'Krona One'; text-shadow: 0 0 10px rgba(255,255,255,1);">
+    <p style="font-size: 50px; margin-bottom: 20px;"><strong style="text-shadow: 0 0 10px rgba(255,255,255,1);">ERROR: (404)</strong></p>
+    <p style="font-size: 30px; font-family: 'Lexend'; text-shadow: 0 0 10px rgba(255,255,255,1);">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    <div style="margin-top: 30px;">
+        <a href="https://aco.company" style="text-decoration: none; background-color: rgb(96, 96, 96); color: white; padding: 10px 20px; border-radius: 5px; font-family: 'Comfortaa'; margin-right: 20px; text-shadow: 0 0 10px rgba(255,255,255,1);">ACO</a>
+        <a href="https://aco.company/corporate/contact/" style="text-decoration: none; background-color: rgb(96, 96, 96); color: white; padding: 10px 20px; border-radius: 5px; font-family: 'Comfortaa'; text-shadow: 0 0 10px rgba(255,255,255,1);">HELP & SUPPORT</a>
+    </div>
+</div>
+
+
+ <!--⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕-->
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="https://aco.company/corporate/center/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="https://aco.company/corporate/center/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="https://aco.company/corporate/center/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="https://aco.company/corporate/center/plugins.js"></script>
+    <!-- Active js -->
+    <script src="https://aco.company/corporate/center/active.js"></script>
+</body>
+
 </html>
