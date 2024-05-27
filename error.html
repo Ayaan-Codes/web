@@ -44,6 +44,57 @@
             background-image: url(https://aco.company/corporate/center/img/bg-img/ACObanner-SPACEerror.png);
             background-size: cover;
         }
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Krona One', sans-serif;
+}
+
+.error-box {
+    width: 80%;
+    background-color: lightgrey;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-family: 'Krona One', sans-serif;
+}
+
+.error-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.error-message {
+    font-size: 30px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.error-links {
+    margin-top: 30px;
+}
+
+.error-link {
+    text-decoration: none;
+    background-color: rgb(96, 96, 96);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.error-link:last-child {
+    margin-right: 0;
+}
     </style>
 
    <!--🎨Style CSS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
@@ -298,14 +349,15 @@
 <br>
 <br>
 <br>
-<div class="ERROR" style="text-align: center; padding: 50px 0; color: white; font-family: 'Krona One';">
-    <p style="font-size: 50px; margin-bottom: 20px;"><strong style="padding-top: 15px;">ERROR: (XXX)</strong></p>
-    <p style="font-size: 30px; font-family: 'Lexend';">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-    <div style="margin-top: 30px;">
-        <a href="https://aco.company" style="text-decoration: none; background-color: rgb(96, 96, 96); color: white; padding: 10px 20px; border-radius: 5px; font-family: 'Comfortaa'; margin-right: 20px; text-shadow: 0 0 10px rgba(255,255,255,1);">ACO</a>
-        <a href="https://aco.company/corporate/contact/" style="text-decoration: none; background-color: rgb(96, 96, 96); color: white; padding: 10px 20px; border-radius: 5px; font-family: 'Comfortaa'; text-shadow: 0 0 10px rgba(255,255,255,1);">HELP & SUPPORT</a>
+
+    <div class="error-box">
+        <p class="error-title"><strong>ERROR: (XXX)</strong></p>
+        <p class="error-message">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        <div class="error-links">
+            <a href="https://aco.company" class="error-link">ACO</a>
+            <a href="https://aco.company/corporate/contact/" class="error-link">HELP & SUPPORT</a>
+        </div>
     </div>
-</div>
 
 
  <!--⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕-->
