@@ -16,7 +16,9 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <title>ACO | ERROR: (XXX)</title>
     <link rel="apple-touch-icon" sizes="180x180" href="https://aco.company/images/favicon.png">
@@ -40,10 +42,87 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <style>
+        body, html {
+  overflow-x: hidden;
+}
         body {
-            background-image: url(https://aco.company/corporate/center/img/bg-img/ACObanner-SPACEerror.png);
+            background-image: url(https://aco.company/corporate/center/img/bg-img/ACObanner-SPACEnoplanets.png);
             background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: 'Krona One', sans-serif;
         }
+
+        .error-box {
+            width: 70%;
+            background-color: lightgrey;
+            padding: 50px 0;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+            box-sizing: border-box;
+            font-family: 'Krona One', sans-serif;
+        }
+
+        .error-title {
+            font-size: 50px;
+            margin-bottom: 20px;
+            padding-top: 15px;
+        }
+
+        .error-message {
+            font-size: 30px;
+            font-family: 'Lexend', sans-serif;
+        }
+
+        .error-links {
+            margin-top: 30px;
+        }
+
+        .error-link {
+            text-decoration: none;
+            background-color: rgb(96, 96, 96);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: 'Comfortaa', cursive;
+            margin-right: 20px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+        }
+
+        .error-link:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 768px) {
+            .error-box {
+                width: 90%;
+                padding: 30px 0;
+            }
+
+            .error-title {
+                font-size: 40px;
+            }
+
+            .error-message {
+                font-size: 25px;
+            }
+
+            .error-link {
+                padding: 8px 15px;
+                margin-right: 10px;
+            }
+        }
+        html, body, header, footer, nav, div, img, video {
+  max-width: 100%;
+  height: auto;
+}
+
     </style>
 
    <!--🎨Style CSS\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/\---/-->
@@ -298,14 +377,15 @@
 <br>
 <br>
 <br>
-<div class="ERROR" style="text-align: center; padding: 50px 0; color: white; font-family: 'Krona One';">
-    <p style="font-size: 50px; margin-bottom: 20px;"><strong style="padding-top: 15px;">ERROR: (XXX)</strong></p>
-    <p style="font-size: 30px; font-family: 'Lexend';">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-    <div style="margin-top: 30px;">
-        <a href="https://aco.company" style="text-decoration: none; background-color: rgb(96, 96, 96); color: white; padding: 10px 20px; border-radius: 5px; font-family: 'Comfortaa'; margin-right: 20px; text-shadow: 0 0 10px rgba(255,255,255,1);">ACO</a>
-        <a href="https://aco.company/corporate/contact/" style="text-decoration: none; background-color: rgb(96, 96, 96); color: white; padding: 10px 20px; border-radius: 5px; font-family: 'Comfortaa'; text-shadow: 0 0 10px rgba(255,255,255,1);">HELP & SUPPORT</a>
+
+    <div class="error-box">
+        <p class="error-title"><strong>ERROR: (XXX)</strong></p>
+        <p class="error-message">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        <div class="error-links">
+            <a href="https://aco.company" class="error-link">ACO</a>
+            <a href="https://aco.company/corporate/contact/" class="error-link">HELP & SUPPORT</a>
+        </div>
     </div>
-</div>
 
 
  <!--⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕⭕🔴⭕-->
