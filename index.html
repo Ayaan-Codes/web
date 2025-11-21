@@ -308,35 +308,15 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- IFRAME -->
-<iframe id="teaser"
-        src="https://aco-project-discovery-1763744036818.vercel.app/"
-        style="width:100%; border:0; overflow:hidden; display:block;"
-        scrolling="no"></iframe>
-
-<!-- AUTO HEIGHT SCRIPT -->
-<script>
-  const iframe = document.getElementById("teaser");
-
-  function resizeIframe() {
-    try {
-      const doc = iframe.contentDocument || iframe.contentWindow.document;
-      const body = doc.body;
-      const html = doc.documentElement;
-
-      const height = Math.max(
-        body.scrollHeight, body.offsetHeight,
-        html.clientHeight, html.scrollHeight, html.offsetHeight
-      );
-
-      iframe.style.height = height + "px";
-    } catch (e) {
-      iframe.style.height = "5000px"; // fallback
-    }
-  }
-
-  iframe.onload = resizeIframe;
-  window.addEventListener("resize", resizeIframe);
-</script>
+<iframe
+  id="teaser"
+  src="https://aco-project-discovery-1763744036818.vercel.app/"
+  title="ACO Teaser"
+  loading="eager"
+  scrolling="no"
+  allow="fullscreen; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+  style="width:100%; height:5000px; border:0; display:block; max-width:100%; overflow:hidden;">
+</iframe>
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area bg-img" style="background-image: url(https://aco.company/corporate/center/img/bg-img/ACOfooter-SPACE.jpg);">
